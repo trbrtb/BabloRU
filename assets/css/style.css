@@ -7,6 +7,7 @@
 /* font-family: 'Neucha', cursive; */
 
 body {
+    height: 100%;
     background: #f3f7fb url(../img/banner-bg.png) top right no-repeat;
     -webkit-background-size: 65%;
     background-size: 65%;

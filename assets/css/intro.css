@@ -3,18 +3,17 @@
      justify-content: center;
      flex-direction: column;
      height: 100vh;
-     min-height: 830px;
+     min-height: 645px;
+
  }
 
  .intro_title_mob {
      display: none;
      width: 700px;
-     /*     border: 1px solid #000;*/
  }
 
  .intro_inner {
      display: flex;
-     /*     border: 1px solid #000;*/
  }
 
  .intro_inner img {
@@ -28,7 +27,6 @@
      flex-direction: column;
      width: 70%;
      padding: 0 15px;
-     /*     border: 1px solid #000;*/
  }
 
  .title {
@@ -45,11 +43,8 @@
 
  .intro_bg {
      width: 30%;
-     /*     border: 1px solid #000;*/
      margin-left: auto;
  }
-
-
 
  @media screen and (max-width: 1240px) {
      .intro_inner img {
