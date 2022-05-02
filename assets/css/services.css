@@ -1,0 +1,19 @@
+.services_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 350px;
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+
+.services_foto {
+    height: 110%;
+}

@@ -3,86 +3,132 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/null.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/logostyle.css">
-    <title>Сколько просрали</title>
-    <script src="./js/logo.js"></script>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/null.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/intro.css">
+    <link rel="stylesheet" href="./assets/css/services.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <title>РЦТ</title>
 </head>
 
 <body>
-    <div id="yaalk" class="yaalk">
-        <div class="app-logo"></div>
-    </div>
-    <header>
-        <div class="header">
-            <div class="title">
-                <h1>Бухалово</h1>
+
+    <!-- --- Header --- -->
+
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="logo">
+                    <img class="logo_black" src="./assets/img/logo-black.png" alt="">
+                    <img class="logo_white" src="./assets/img/logo-white.png" alt="">
+                    <h1>РЦТ</h1>
+                </div>
+                <div class="nav">
+                    <a class="nav_link" href="#">Услуги</a>
+                    <a class="nav_link" href="#">Наши работы</a>
+                    <a class="nav_link" href="#">Контакты</a>
+                    <a class="nav_link" href="#">Отзывы</a>
+                </div>
+                <button class="burger">
+                    <span class="burger_item"></span>
+                </button>
             </div>
-        </div>
-        <div class="b_w">
-            <label class="switch">
-                <img class="icon_d" src="./img/d_b.png" alt="">
-                <input type="checkbox" onclick="changeMode()">
-                <span class="slider"></span>
-                <img class="icon_n" src="./img/n_b.png" alt="">
-            </label>
         </div>
     </header>
-    <div class="container">
-        <div class="content">
-            <div class="content_inner">
-                <div class="group1">
-                    <div class="block1">
-                        <h3>Сколько пропили - 6284р.</h3>
-                    </div>
-                    <div class="block1">
-                        <h3>Каждый получается по - 2095р.</h3>
-                    </div>
 
+    <!-- --- Intro --- -->
+
+    <div class="intro">
+        <div class="container">
+            <div class="intro_title_mob">
+                <h1 class="title">Ремонт цифровой техники</h1>
+                <h2 class="suptitle">Простые решения для сложных проблем</h2>
+            </div>
+            <div class="intro_inner">
+                <div class="intro_title">
+                    <h1 class="title">Ремонт цифровой техники</h1>
+                    <h2 class="suptitle">Простые решения для сложных проблем</h2>
                 </div>
-                <div class="group2">
-                    <div class="group_title">
-                        <h2>Кто сколько потратил:</h2>
+                <img class="intro_bg" src="./assets/img/intro-bg-2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="qwe" style="height: 1000px; background: #9bacd1"></div>
+    <!-- --- Services --- -->
+
+    <!--
+    <div class="services">
+        <div class="container_4k">
+            <div class="services_inner">
+                <div class="services_card">
+                    <img class="services_foto" src="./assets/img/services/phone.jpg" alt="">
+                    <div class="services_title">
+                        <h3>Ремонт телефонов</h3>
                     </div>
-                    <div class="block2">
-                        <h3>Антон - 2000р.</h3>
-                    </div>
-                    <div class="block2">
-                        <h3>д.Серый - 984р.</h3>
-                    </div>
-                    <div class="block2">
-                        <h3>Артем - 3300р.</h3>
-                    </div>
-                    <!-- <div class="block2">
-                        <h3>Ваня - 0р.</h3>
-                    </div> -->
                 </div>
-                <div class="group3">
-                    <div class="group_title">
-                        <h2>Кто кому должен:</h2>
+                <div class="services_card">
+                    <img class="services_foto" src="./assets/img/services/remont_notebook.jpg" alt="">
+                    <div class="services_title">
+                        <h3>Ремонт телефонов</h3>
                     </div>
-                    <div class="block3">
-                        <h3>д.Серый должен Артему - 1111р.</h3>
+                </div>
+                <div class="services_card">
+                    <img class="services_foto" src="./assets/img/services/tablet.jpg" alt="">
+                    <div class="services_title">
+                        <h3>Ремонт телефонов</h3>
                     </div>
-                    <div class="block3">
-                        <h3>Антон должен Артему - 94р.</h3>
+                </div>
+                <div class="services_card">
+                    <img class="services_foto" src="./assets/img/services/display.jpg" alt="">
+                    <div class="services_title">
+                        <h3>Ремонт телефонов</h3>
                     </div>
-                    <div class="block3">
-                        <h3>А широкий сами делите</h3>
+                </div>
+                <div class="services_card">
+                    <img class="services_foto" src="./assets/img/services/firmware.jpg" alt="">
+                    <div class="services_title">
+                        <h3>Ремонт телефонов</h3>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <img class="services_foto" src="./assets/img/services/notebook.jpg" alt="">
+                    <div class="services_title">
+                        <h3>Ремонт телефонов</h3>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <img class="services_foto" src="./assets/img/services/pc.jpg" alt="">
+                    <div class="services_title">
+                        <h3>Ремонт телефонов</h3>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <img class="services_foto" src="./assets/img/services/desktop.jpg" alt="">
+                    <div class="services_title">
+                        <h3>Ремонт телефонов</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        function changeMode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-    </script>
+-->
 
-</body>
+    <!-- --- Footer --- -->
 
-</html>
+    <!--
+    <footer class="Footer">
+        <div class="container">
+            <div class="Footer_inner">
+
+            </div>
+        </div>
+    </footer>
+-->
+
+    <script src="assets/js/header-scroll.js"></script>
+
+</body></html>
