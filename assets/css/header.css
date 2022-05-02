@@ -12,7 +12,7 @@ header {
 .header-scroll.header {
     position: fixed;
     height: 75px;
-    background-color: rgba(26, 36, 62, 0.6);
+    background-color: rgba(26, 36, 62, 0.9);
 }
 
 .header_inner {
