@@ -1,5 +1,5 @@
 .intro {
-    background: url(../img/intro-bg-2.png) center right no-repeat;
+    background: url(../img/intro-bg.png) center right no-repeat;
     -webkit-background-size: 35%;
     background-size: 35%;
     display: flex;
@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 1024px) {
     .intro {
-        background: url(../img/intro-bg-2.png) bottom right no-repeat;
+        background: url(../img/intro-bg.png) bottom right no-repeat;
         -webkit-background-size: 45%;
         background-size: 45%;
         min-height: 750px;
