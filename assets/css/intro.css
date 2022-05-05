@@ -14,21 +14,18 @@
     justify-content: center;
     flex-direction: column;
     width: 70%;
-    /*    border: 0.063em solid #000;*/
 }
 
 .title {
     font-family: 'Neucha', cursive;
     font-size: 5em;
     margin-bottom: .5em;
-    /*    border: 1px solid #000;*/
 }
 
 .suptitle {
     font-family: 'Neucha', cursive;
     font-size: 3.2em;
     text-align: right;
-    /*        border: 1px solid #000;*/
 }
 
 .suptitle:after {
@@ -46,7 +43,6 @@
     font-size: 2.6em;
     text-align: left;
     width: 21.3em;
-    /*        border: 1px solid #000;*/
 }
 
 @media screen and (max-width: 1285px) {
@@ -80,8 +76,8 @@
 @media screen and (max-width: 1080px) {
     .intro {
         background: url(../img/intro-bg.png) bottom 1em right no-repeat;
-        -webkit-background-size: 40%;
-        background-size: 40%;
+        -webkit-background-size: 32%;
+        background-size: 32%;
         min-height: 40em;
     }
 
