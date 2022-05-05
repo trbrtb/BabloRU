@@ -23,8 +23,8 @@
 }
 
 .services_card_foto {
-    /*    height: 140%;*/
-    /*    width: 200%;*/
+    height: 140%;
+    width: 200%;
     transition: all .3s linear;
 }
 
