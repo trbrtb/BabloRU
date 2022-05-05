@@ -6,8 +6,7 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    min-height: 850px;
-
+    min-height: 53.125em;
 }
 
 .intro_title {
@@ -15,155 +14,216 @@
     justify-content: center;
     flex-direction: column;
     width: 70%;
-    /*    border: 1px solid #000;*/
+    /*    border: 0.063em solid #000;*/
 }
 
 .title {
     font-family: 'Neucha', cursive;
-    font-size: 70px;
-    margin-bottom: 50px;
+    font-size: 5em;
+    margin-bottom: .5em;
+    /*    border: 1px solid #000;*/
 }
 
 .suptitle {
     font-family: 'Neucha', cursive;
-    font-size: 50px;
+    font-size: 3.2em;
     text-align: right;
+    /*        border: 1px solid #000;*/
+}
+
+.suptitle:after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: .01em;
+    background: #7b7b7b;
+    margin: 1.3em auto;
+}
+
+.title_text {
+    font-family: 'Neucha', cursive;
+    font-style: italic;
+    font-size: 2.6em;
+    text-align: left;
+    width: 21.3em;
+    /*        border: 1px solid #000;*/
+}
+
+@media screen and (max-width: 1285px) {
+    .title_text {
+        font-size: 2.4em;
+    }
 }
 
 @media screen and (max-width: 1230px) {
     .intro_title {
-        width: 70%;
-        margin-left: 60px;
+        margin-left: 3.75em;
     }
 
     .title {
-        font-size: 55px;
+        font-size: 3.438em;
     }
 
     .suptitle {
-        font-size: 40px;
+        font-size: 2.5em;
+    }
+
+    .suptitle:after {
+        margin: 1.5em auto;
+    }
+
+    .title_text {
+        font-size: 2.1em;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
     .intro {
-        background: url(../img/intro-bg.png) bottom right no-repeat;
-        -webkit-background-size: 45%;
-        background-size: 45%;
-        min-height: 750px;
+        background: url(../img/intro-bg.png) bottom 1em right no-repeat;
+        -webkit-background-size: 32%;
+        background-size: 32%;
+        min-height: 40em;
     }
 
-    .intro_title {
-        width: 700px;
-        margin-left: 70px;
-        -webkit-transform: rotate(-60deg);
-        -moz-transform: rotate(-60deg);
-        -ms-transform: rotate(-60deg);
-        -o-transform: rotate(-60deg);
-        transform: rotate(-60deg);
-    }
-
-    .title {
-        font-size: 60px;
+    .title_text {
+        font-size: 1.9em;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .intro_title {
-        margin-left: 20px;
+@media screen and (max-width: 970px) {
+    .title {
+        font-size: 3.3em;
+    }
+
+    .suptitle {
+        font-size: 2.3em;
+    }
+
+    .title_text {
+        letter-spacing: .04em;
+        line-height: 1.2em;
+        width: 15.5em;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .title {
+        font-size: 3em;
+    }
+
+    .suptitle {
+        font-size: 2em;
+    }
+
+    .suptitle:after {
+        margin: 2em auto 3em;
+    }
+
+    .title_text {
+        font-size: 1.5em;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .title {
+        font-size: 2.5em;
+    }
 
+    .suptitle {
+        font-size: 1.5em;
+    }
 
-    .intro_title {
-        margin-left: -30px;
+    .title_text {
+        font-size: 1.4em;
     }
 }
 
-@media screen and (max-width: 650px) {
-
-
+@media screen and (max-width: 615px) {
     .intro_title {
-        margin-left: -70px;
+        width: 90%;
+        margin: 0 auto;
     }
 
-    @media screen and (max-width: 550px) {
-        .intro {
-            min-height: 710px;
-        }
-
-        .intro_title {
-            width: 650px;
-            margin-left: -100px;
-            -webkit-transform: rotate(-70deg);
-            -moz-transform: rotate(-70deg);
-            -ms-transform: rotate(-70deg);
-            -o-transform: rotate(-70deg);
-            transform: rotate(-70deg);
-        }
-
-        .title {
-            font-size: 55px;
-            margin-bottom: 20px;
-        }
-
-        .suptitle {
-            font-size: 35px;
-        }
+    .title {
+        text-align: center;
     }
 
-    @media screen and (max-width: 450px) {
-        .intro {
-            min-height: 700px;
-        }
-
-        .intro_title {
-            width: 600px;
-            margin-left: -90px;
-            -webkit-transform: rotate(-75deg);
-            -moz-transform: rotate(-75deg);
-            -ms-transform: rotate(-75deg);
-            -o-transform: rotate(-75deg);
-            transform: rotate(-75deg);
-        }
+    .suptitle {
+        text-align: center;
     }
 
-    @media screen and (max-width: 400px) {
-        .intro {
-            min-height: 590px;
-        }
+    .title_text {
+        font-size: 1.3em;
+    }
+}
 
-        .intro_title {
-            width: 430px;
-            margin-left: -40px;
-        }
-
-        .title {
-            font-size: 40px;
-        }
-
-        .suptitle {
-            font-size: 25px;
-        }
+@media screen and (max-width: 485px) {
+    .title {
+        font-size: 2.4em;
     }
 
-    @media screen and (max-width: 320px) {
-        .intro {
-            min-height: 480px;
-        }
-
-        .intro_title {
-            width: 385px;
-            margin-left: -45px;
-        }
-
-        .title {
-            font-size: 35px;
-        }
-
-        .suptitle {
-            font-size: 20px;
-        }
+    .suptitle {
+        font-size: 1.4em;
     }
+}
+
+@media screen and (max-width: 465px) {
+    .title {
+        font-size: 2.3em;
+    }
+
+    .suptitle {
+        font-size: 1.3em;
+    }
+
+    .title_text {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .title {
+        font-size: 2.2em;
+    }
+
+    .suptitle {
+        font-size: 1.2em;
+
+    }
+
+    .title_text {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .title_text {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 2.1em;
+    }
+
+    .suptitle {
+        font-size: 1.1em;
+    }
+
+    .title_text {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .suptitle {
+        font-size: 1em;
+    }
+
+    .title_text {
+        font-size: 1em;
+    }
+}
