@@ -6,7 +6,7 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    min-height: 53.125em;
+    min-height: 55em;
 }
 
 .intro_title {
@@ -80,8 +80,8 @@
 @media screen and (max-width: 1080px) {
     .intro {
         background: url(../img/intro-bg.png) bottom 1em right no-repeat;
-        -webkit-background-size: 32%;
-        background-size: 32%;
+        -webkit-background-size: 40%;
+        background-size: 40%;
         min-height: 40em;
     }
 
