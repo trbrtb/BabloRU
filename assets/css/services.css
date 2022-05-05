@@ -147,7 +147,11 @@
     }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 417px) {
+=======
+@media screen and (max-width: 414px) {
+>>>>>>> 15f120c507db4dddf8b623995e12e258feda27af
     .services_card {
         width: 100%;
         height: 14em;
