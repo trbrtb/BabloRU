@@ -18,15 +18,21 @@ body {
     background-attachment: fixed;
 }
 
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+      position: fixed;
+}
+
 .container {
     width: 100%;
-    max-width: 1300px;
+    max-width: 81.25em;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 0.938em;
 }
 
 .container_4k {
     width: 100%;
-    max-width: 2300px;
+    max-width: 143.75em;
     margin: 0 auto;
 }

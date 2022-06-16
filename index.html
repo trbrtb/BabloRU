@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/intro.css">
     <link rel="stylesheet" href="./assets/css/services.css">
+    <link rel="stylesheet" href="./assets/css/work.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <script src="./assets/js/jquery.min.js"></script>
     <title>РЦТ</title>
 </head>
 
@@ -25,13 +27,15 @@
                 <div class="logo">
                     <img class="logo_black" src="./assets/img/logo-black.png" alt="">
                     <img class="logo_white" src="./assets/img/logo-white.png" alt="">
-                    <h1>РЦТ</h1>
+                    <a class="scroll-to" href="#intro">
+                        <h1>РЦТ</h1>
+                    </a>
                 </div>
                 <div class="nav">
-                    <a class="nav_link" href="#">Услуги</a>
-                    <a class="nav_link" href="#">Наши работы</a>
-                    <a class="nav_link" href="#">Контакты</a>
-                    <a class="nav_link" href="#">Отзывы</a>
+                    <a class="nav_link scroll-to" href="#services">Услуги</a>
+                    <a class="nav_link scroll-to" href="#work">Наши работы</a>
+                    <a class="nav_link scroll-to" href="#footer">Контакты</a>
+                    <a class="nav_link scroll-to" href="#">Отзывы</a>
                 </div>
                 <button class="burger">
                     <span class="burger_item"></span>
@@ -42,20 +46,23 @@
 
     <!-- --- Intro --- -->
 
+
     <div class="container">
-        <div class="intro">
+        <div class="intro" id="intro">
             <div class="intro_title">
                 <h1 class="title">Ремонт цифровой техники</h1>
                 <h2 class="suptitle">Простые решения для сложных проблем</h2>
-                <p class="title_text">Осуществляем широкий спектр профессиональных услуг по ремонту цифровой техники любой сложности</p>
+                <p class="title_text">Осуществляем широкий спектр профессиональных услуг по ремонту цифровой техники
+                    любой сложности</p>
             </div>
         </div>
     </div>
 
+
     <!-- --- Services --- -->
 
 
-    <div class="services">
+    <div class="services" id="services">
         <div class="container_4k">
             <div class="services_inner">
                 <div class="services_card">
@@ -118,11 +125,71 @@
         </div>
     </div>
 
+    <!-- --- Work --- -->
+
+    <div class="container_4k">
+        <div class="slider" id="work">
+            <div class="slider_wrapper">
+                <div class="slider_items">
+                   
+                    <div class="slider_item">
+                        <div class="work_foto">
+                            <img class="image_modal" src="./assets/img/work/1.jpg" alt="">
+                        </div>
+                        <div class="work_title">1</div>
+                        <div class="work_suptitle">Loren ipsum dolor sit amet</div>
+                    </div>
+                    
+                    <div class="slider_item">
+                        <div class="work_foto">
+                            <img class="image_modal" src="./assets/img/work/2.jpg" alt="">
+                        </div>
+                        <div class="work_title">2</div>
+                        <div class="work_suptitle">Loren ipsum dolor sit amet</div>
+                    </div>
+                    
+                    <div class="slider_item">
+                        <div class="work_foto">
+                            <img class="image_modal" src="./assets/img/work/3.jpg" alt="">
+                        </div>
+                        <div class="work_title">3</div>
+                        <div class="work_suptitle">Loren ipsum dolor sit amet</div>
+                    </div>
+                    
+                    <div class="slider_item">
+                        <div class="work_foto">
+                            <img class="image_modal" src="./assets/img/work/1.jpg" alt="">
+                        </div>
+                        <div class="work_title">4</div>
+                        <div class="work_suptitle">Loren ipsum dolor sit amet</div>
+                    </div>
+                    
+                    <div class="slider_item">
+                        <div class="work_foto">
+                            <img class="image_modal" src="./assets/img/work/2.jpg" alt="">
+                        </div>
+                        <div class="work_title">5</div>
+                        <div class="work_suptitle">Loren ipsum dolor sit amet</div>
+                    </div>
+                    
+                    <div class="slider_item">
+                        <div class="work_foto">
+                            <img class="image_modal" src="./assets/img/work/3.jpg" alt="">
+                        </div>
+                        <div class="work_title">6</div>
+                        <div class="work_suptitle">Loren ipsum dolor sit amet</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <a class="slider_control" data-slide="prev"></a>
+            <a class="slider_control" data-slide="next"></a>
+        </div>
+    </div>
 
     <!-- --- Footer --- -->
 
-
-    <footer class="Footer">
+    <footer class="Footer" id="footer">
         <div class="container">
             <div class="Footer_inner">
 
@@ -130,7 +197,8 @@
         </div>
     </footer>
 
-
     <script src="assets/js/header-scroll.js"></script>
-
+    <script src="assets/js/scroll_nav.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="./assets/js/modal.js"></script>
 </body></html>

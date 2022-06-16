@@ -1,0 +1,153 @@
+.slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 100vh;
+}
+
+.slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider_items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+    height: 30em;
+    padding: 1em;
+}
+
+.work_foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    height: 100%;
+}
+
+.work_foto:hover {
+    transform: translate(-.2em, -.2em);
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 1);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 1);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 1);
+}
+
+.work_foto img {
+    width: 125%;
+    min-height: 100%;
+    transition: all 0.2s linear;
+}
+
+.work_title {
+    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    color: #4a4a4a;
+    margin-bottom: 1em;
+}
+
+.work_suptitle {
+    font-size: 1.3em;
+    font-family: 'Comfortaa', cursive;
+    color: #6a6a6a;
+}
+
+.slider_control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s linear;
+}
+
+.slider_control:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slider_control_hide {
+    display: none;
+}
+
+.slider_control[data-slide='prev'] {
+    left: -2.6em;
+}
+
+.slider_control[data-slide='next'] {
+    right: -2.6em;
+}
+
+.slider_control[data-slide='prev']::before {
+    position: absolute;
+    right: 25%;
+    content: '';
+    display: block;
+    width: 1em;
+    height: 1em;
+    transform: rotate(45deg);
+    border-left: .4em solid #eee;
+    border-bottom: .4em solid #eee;
+}
+
+.slider_control[data-slide='next']::before {
+    position: absolute;
+    left: 25%;
+    content: '';
+    display: block;
+    width: 1em;
+    height: 1em;
+    transform: rotate(45deg);
+    border-right: .4em solid #eee;
+    border-top: .4em solid #eee;
+}
+
+
+
+/*====== Modal ======*/
+
+.popup_bg {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.popup {
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+
+.popup_img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    max-height: 90%;
+    max-width: 90%;
+}

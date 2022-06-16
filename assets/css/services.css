@@ -1,14 +1,18 @@
-/*
 .services {
-    height: 92vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-*/
 
 .services_inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 92vh;
+    overflow: hidden;
+    height: 100vh;
+    max-height: 90em;
+
 }
 
 .services_card {
@@ -160,8 +164,8 @@
     }
 
     .services_card_foto {
-        height: 140%;
-        width: 140%;
+        height: 150%;
+        width: 150%;
     }
 
     .services_title {
