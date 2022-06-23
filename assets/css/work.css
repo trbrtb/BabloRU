@@ -6,6 +6,7 @@
     margin: 0 auto;
     width: 90%;
     height: 100vh;
+    padding-top: 3.125em;
 }
 
 .slider_wrapper {
@@ -16,15 +17,14 @@
 .slider_items {
     display: flex;
     transition: transform 0.5s ease;
+    height: 100%;
 }
 
 .slider_item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
-    height: 30em;
     padding: 1em;
 }
 
@@ -36,7 +36,7 @@
     margin-bottom: 1em;
     cursor: pointer;
     transition: all 0.2s linear;
-    height: 100%;
+    height: 20em;
 }
 
 .work_foto:hover {
@@ -117,8 +117,6 @@
     border-top: .4em solid #eee;
 }
 
-
-
 /*====== Modal ======*/
 
 .popup_bg {
@@ -150,4 +148,75 @@
     z-index: 2;
     max-height: 90%;
     max-width: 90%;
+}
+
+@media screen and (min-width: 2200px) {
+    .slider {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slider {
+        width: 85%;
+    }
+
+    .slider_item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        width: 80%;
+        height: auto;
+        padding: 7em 0;
+    }
+
+    .slider_item {
+        padding: .5em;
+    }
+
+    .work_foto {
+        height: 15em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .work_foto {
+        height: 13em;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .slider {
+        width: 75%;
+        padding: 5em 0;
+    }
+
+    .slider_item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .work_foto {
+        height: 20em;
+    }
+}
+
+@media screen and (max-width: 417px) {
+    .work_foto {
+        height: 17em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .slider {
+        width: 70%;
+    }
+
+    .work_foto {
+        height: 14em;
+    }
 }

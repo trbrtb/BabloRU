@@ -61,7 +61,7 @@ function ChiefSlider(selector, config) {
     // configuration of the slider
     this._config = {
         loop: true,
-        autoplay: false,
+        autoplay: true,
         interval: 5000,
         refresh: true,
         swipe: true,

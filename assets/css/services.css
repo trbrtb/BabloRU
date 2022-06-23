@@ -12,7 +12,6 @@
     overflow: hidden;
     height: 100vh;
     max-height: 90em;
-
 }
 
 .services_card {
@@ -73,6 +72,12 @@
     width: 100%;
 }
 
+@media screen and (min-width: 2700px) {
+    .services {
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 1390px) {
     .services_title {
         font-size: 1.3em;
@@ -92,8 +97,13 @@
 }
 
 @media screen and (max-width: 890px) {
+    .services {
+        height: auto;
+    }
+
     .services_inner {
         height: auto;
+        max-height: none;
     }
 
     .services_card {
@@ -145,7 +155,6 @@
 }
 
 @media screen and (max-width: 490px) {
-
     .services_title {
         font-size: .8em;
     }

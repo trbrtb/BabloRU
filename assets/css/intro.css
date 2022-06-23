@@ -45,6 +45,12 @@
     width: 21.3em;
 }
 
+@media screen and (min-width: 2700px) {
+    .intro {
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 1285px) {
     .title_text {
         font-size: 2.4em;
