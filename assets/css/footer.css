@@ -7,6 +7,12 @@ footer {
 	scroll-margin-top: 50px;
 }
 
+footer::-webkit-full-page-media,
+footer:future,
+footer:root .safari_only {
+	padding-top: 50px;
+}
+
 .footer_title {
 	display: flex;
 	font-family: 'Comfortaa', cursive;
