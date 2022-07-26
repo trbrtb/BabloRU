@@ -86,24 +86,7 @@
 
 @media screen and (max-width: 1220px) {
     .services_title {
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (max-width: 1055px) {
-    .services_title {
-        font-size: .9em;
-    }
-}
-
-@media screen and (max-width: 890px) {
-    .services {
-        height: auto;
-    }
-
-    .services_inner {
-        height: auto;
-        max-height: none;
+        font-size: 1.9em;
     }
 
     .services_card {
@@ -117,6 +100,17 @@
         padding: 1.75em 1em 1em 1em;
         top: 2em;
         bottom: auto;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .services {
+        height: auto;
+    }
+
+    .services_inner {
+        height: auto;
+        max-height: none;
     }
 
     .services_title {

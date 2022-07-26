@@ -159,6 +159,8 @@
 @media screen and (max-width: 1024px) {
     .slider {
         width: 85%;
+        height: auto;
+        padding: 7em 0;
     }
 
     .slider_item {
@@ -170,8 +172,6 @@
 @media screen and (max-width: 768px) {
     .slider {
         width: 80%;
-        height: auto;
-        padding: 7em 0;
     }
 
     .slider_item {
@@ -192,7 +192,6 @@
 @media screen and (max-width: 490px) {
     .slider {
         width: 75%;
-        padding: 5em 0;
     }
 
     .slider_item {
