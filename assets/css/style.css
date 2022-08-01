@@ -36,3 +36,9 @@ body.modal-open {
 	max-width: 143.75em;
 	margin: 0 auto;
 }
+
+@media screen and (max-width: 1300px) {
+	.container {
+		overflow: hidden;
+	}
+}

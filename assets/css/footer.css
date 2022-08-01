@@ -5,6 +5,7 @@ footer {
 	border-top-left-radius: 2em;
 	border-top-right-radius: 2em;
 	scroll-margin-top: 50px;
+		overflow: hidden;
 }
 
 footer::-webkit-full-page-media,
@@ -58,10 +59,12 @@ footer:root .safari_only {
 	border: .1rem solid #bcbcbc;
 	opacity: .8;
 	transition: opacity 400ms ease-in;
+	transition: transform 200ms ease-in;
 }
 
 .input_txt:hover {
-	opacity: 1
+	opacity: 1;
+	transform: translate(.2em, 0);
 }
 
 .input_name {
@@ -165,6 +168,10 @@ footer:root .safari_only {
 	display: flex;
 	align-items: center;
 	margin-left: 2em;
+	transition: transform 200ms ease-in;
+}
+.social_group:hover {
+	transform: translate(.2em, 0);
 }
 
 .social_group:first-child {
@@ -324,6 +331,9 @@ footer:root .safari_only {
 	.social_group {
 		margin-left: 0em;
 	}
+	.social_group:hover {
+	transform: translate(0, 0);
+}
 }
 
 @media screen and (max-width: 850px) {

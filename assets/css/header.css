@@ -138,6 +138,10 @@ header {
 	transform: scale(1);
 }
 
+.nav_4k {
+	display: none;
+}
+
 .burger {
 	display: none;
 	padding: 9px 2px;
@@ -168,7 +172,6 @@ header {
 	background-color: #fff;
 	position: absolute;
 	right: 0;
-
 }
 
 .burger_item:before {
@@ -187,6 +190,41 @@ header {
 
 .burger.active .burger_item:after {
 	transform: rotate(-45deg) translate3d(6px, -5px, 0);
+}
+
+@media screen and (min-width: 2200px) {
+	.header-scroll.header {
+		height: 100px;
+	}
+
+	.header-scroll .nav_4k {
+		color: #fff;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.nav_link {
+		display: block;
+		font-family: 'Comfortaa', cursive;
+		font-weight: 700;
+		line-height: normal;
+		color: #f2f2f2;
+		font-size: 1.4em;
+		cursor: pointer;
+		text-transform: none;
+		margin: 0;
+	}
+
+	.header-scroll .nav_4k {
+		color: #f2f2f2;
+	}
+
+	.header-scroll .nav_4k:hover {
+		transform: translateY(0px);
+		color: #fff;
+	}
 }
 
 @media screen and (max-width: 768px) {
