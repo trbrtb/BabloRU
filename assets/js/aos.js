@@ -456,7 +456,7 @@ AOS.init({
 	disableMutationObserver: false, // disables automatic mutations' detections (advanced)
 	debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
 	throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-	
+
 	offset: 100, // На сколько видно элемент снизу страницы в px чтоб началась анимация
 	delay: 50, // Задержка анимации от 0 до 3000, с шагом 50ms
 	duration: 800, // Скорость анимации от 0 до 3000, с шагом 50ms

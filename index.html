@@ -6,9 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="./assets/css/preloader.css">
 	<link rel="stylesheet" href="./assets/css/null.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="./assets/css/aos.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="./assets/css/header.css">
 	<link rel="stylesheet" href="./assets/css/intro.css">
 	<link rel="stylesheet" href="./assets/css/services.css">
@@ -19,6 +20,16 @@
 </head>
 
 <body>
+
+	<!-- --- Preloader --- -->
+
+	<div class="preloader">
+		<div class="preloader_loader">
+			<div class="spinner-grow text-danger" role="status" style="width: 4rem; height: 4rem;">
+				<span class="sr-only">Загрузка...</span>
+			</div>
+		</div>
+	</div>
 
 	<!-- --- Header --- -->
 
@@ -50,11 +61,11 @@
 
 	<div class="container">
 		<div class="intro" id="intro">
-			<div class="intro_title">
+			<div class="intro_text">
 				<h1 class="title" data-aos="fade-right" data-aos-delay="0">Ремонт цифровой техники</h1>
 				<h2 class="suptitle" data-aos="fade-left" data-aos-delay="0">Простые решения для сложных проблем</h2>
-				<p class="title_text" data-aos="fade-up" data-aos-delay="0">Осуществляем широкий спектр профессиональных услуг по ремонту цифровой техники
-					любой сложности</p>
+				<h3 class="desc" data-aos="fade-up" data-aos-delay="0">Осуществляем широкий спектр профессиональных услуг по ремонту цифровой техники
+					любой сложности</h3>
 			</div>
 			<div class="intro_bg" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true">
 				<img src="./assets/img/intro-bg.png" alt="">
@@ -259,9 +270,10 @@
 		</div>
 	</footer>
 
+	<script src="assets/js/preloader.js"></script>
 	<script src="assets/js/aos.js"></script>
-	<script src="assets/js/header-scroll.js"></script>
 	<script src="assets/js/scroll_nav.js"></script>
+	<script src="assets/js/header-scroll.js"></script>
 	<script src="assets/js/burger.js"></script>
 	<script src="assets/js/slider.js"></script>
 	<script src="./assets/js/modal_slider.js"></script>
