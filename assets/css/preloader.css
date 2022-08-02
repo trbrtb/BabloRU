@@ -10,6 +10,8 @@
 
 .preloader_loader {
 	position: absolute;
+	font-family: 'Neucha', cursive;
+	font-size: 1em;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%)
