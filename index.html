@@ -19,7 +19,7 @@
 	<title>РЦТ</title>
 </head>
 
-<body>
+<body id="body">
 
 	<!-- --- Preloader --- -->
 
@@ -35,17 +35,17 @@
 		<div class="container">
 			<div class="header_inner">
 				<div class="logo">
-					<img class="logo_black" src="./assets/img/logo-black.png" alt="">
-					<img class="logo_white" src="./assets/img/logo-white.png" alt="">
+					<img class="logo_black" id="logo_black" src="./assets/img/logo-black.png" alt="">
+					<img class="logo_white" id="logo_white" src="./assets/img/logo-white.png" alt="">
 					<a class="scroll-to" href="#intro">
-						<h1>РЦТ</h1>
+						<h1 class="rct" id="rct">РЦТ</h1>
 					</a>
 				</div>
 				<div class="nav" id="nav">
 					<a class="nav_link scroll-to" href="#services">Услуги</a>
 					<a class="nav_link scroll-to" href="#work">Наши работы</a>
 					<a class="nav_link scroll-to" href="#footer">Контакты</a>
-					<a class="nav_link scroll-to" href="#">Отзывы</a>
+					<a class="nav_link" href="comments.html">Отзывы</a>
 				</div>
 				<a class="nav_link nav_4k scroll-to" href="#footer">Наш адрес: г. Балаково, ул. Пионерская 1а</a>
 				<button class="burger" id="burger" type="button">
@@ -55,143 +55,146 @@
 		</div>
 	</header>
 
-	<!-- --- Intro --- -->
+	<div class="page">
 
-	<div class="container">
-		<div class="intro" id="intro">
-			<div class="intro_text">
-				<h1 class="title" data-aos="fade-right" data-aos-delay="0">Ремонт цифровой техники</h1>
-				<h2 class="suptitle" data-aos="fade-left" data-aos-delay="0">Простые решения для сложных проблем</h2>
-				<h3 class="desc" data-aos="fade-up" data-aos-delay="0">Осуществляем широкий спектр профессиональных услуг по ремонту цифровой техники
-					любой сложности</h3>
-			</div>
-			<div class="intro_bg" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true">
-				<img class="intro_bg_img_normal" src="./assets/img/intro-bg.png" alt="">
-				<img class="intro_bg_img_opacity" src="./assets/img/intro-bg_opacity.png" alt="">
+		<!-- --- Intro --- -->
+
+		<div class="container">
+			<div class="intro" id="intro">
+				<div class="intro_text">
+					<h1 class="title" data-aos="fade-right" data-aos-delay="0">Ремонт цифровой техники</h1>
+					<h2 class="suptitle" data-aos="fade-left" data-aos-delay="0">Простые решения для сложных проблем</h2>
+					<h3 class="desc" data-aos="fade-up" data-aos-delay="0">Осуществляем широкий спектр профессиональных услуг по ремонту цифровой техники
+						любой сложности</h3>
+				</div>
+				<div class="intro_bg" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true">
+					<img class="intro_bg_img_normal" src="./assets/img/intro-bg.png" alt="">
+					<img class="intro_bg_img_opacity" src="./assets/img/intro-bg_opacity.png" alt="">
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- --- Services --- -->
+		<!-- --- Services --- -->
 
-	<div class="services" id="services">
+		<div class="services" id="services">
+			<div class="container_4k">
+				<div class="services_inner">
+					<div class="services_card" data-aos="zoom-in-up" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/phone.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Ремонт телефонов</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/remont_notebook.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Ремонт ноутбуков</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="400" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/tablet.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Ремонт планшетов</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="600" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/pc.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Ремонт системных блоков</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/desktop.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Ремонт мониторов</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/display.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Замена дисплея</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="400" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/firmware.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Прошивка техники</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="600" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/notebook.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Чистка ноутбуков и ПК</div>
+							<div class="line"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- --- Work --- -->
+
 		<div class="container_4k">
-			<div class="services_inner">
-				<div class="services_card" data-aos="zoom-in-up" data-aos-once="true">
-					<img class="services_card_foto" src="./assets/img/services/phone.jpg" alt="">
-					<div class="services_card_content">
-						<div class="services_title">Ремонт телефонов</div>
-						<div class="line"></div>
+			<div class="slider" id="work">
+				<div class="slider_wrapper">
+					<div class="slider_items">
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/1.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 1</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/2.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 2</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/3.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 3</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/1.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 4</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/2.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 5</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/3.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 6</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
 					</div>
 				</div>
-				<div class="services_card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-once="true">
-					<img class="services_card_foto" src="./assets/img/services/remont_notebook.jpg" alt="">
-					<div class="services_card_content">
-						<div class="services_title">Ремонт ноутбуков</div>
-						<div class="line"></div>
-					</div>
-				</div>
-				<div class="services_card" data-aos="zoom-in-up" data-aos-delay="400" data-aos-once="true">
-					<img class="services_card_foto" src="./assets/img/services/tablet.jpg" alt="">
-					<div class="services_card_content">
-						<div class="services_title">Ремонт планшетов</div>
-						<div class="line"></div>
-					</div>
-				</div>
-				<div class="services_card" data-aos="zoom-in-up" data-aos-delay="600" data-aos-once="true">
-					<img class="services_card_foto" src="./assets/img/services/pc.jpg" alt="">
-					<div class="services_card_content">
-						<div class="services_title">Ремонт системных блоков</div>
-						<div class="line"></div>
-					</div>
-				</div>
-				<div class="services_card" data-aos="zoom-in-up" data-aos-once="true">
-					<img class="services_card_foto" src="./assets/img/services/desktop.jpg" alt="">
-					<div class="services_card_content">
-						<div class="services_title">Ремонт мониторов</div>
-						<div class="line"></div>
-					</div>
-				</div>
-				<div class="services_card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-once="true">
-					<img class="services_card_foto" src="./assets/img/services/display.jpg" alt="">
-					<div class="services_card_content">
-						<div class="services_title">Замена дисплея</div>
-						<div class="line"></div>
-					</div>
-				</div>
-				<div class="services_card" data-aos="zoom-in-up" data-aos-delay="400" data-aos-once="true">
-					<img class="services_card_foto" src="./assets/img/services/firmware.jpg" alt="">
-					<div class="services_card_content">
-						<div class="services_title">Прошивка техники</div>
-						<div class="line"></div>
-					</div>
-				</div>
-				<div class="services_card" data-aos="zoom-in-up" data-aos-delay="600" data-aos-once="true">
-					<img class="services_card_foto" src="./assets/img/services/notebook.jpg" alt="">
-					<div class="services_card_content">
-						<div class="services_title">Чистка ноутбуков и ПК</div>
-						<div class="line"></div>
-					</div>
-				</div>
+				<a class="slider_control" data-slide="prev"></a>
+				<a class="slider_control" data-slide="next"></a>
 			</div>
 		</div>
+
 	</div>
-
-	<!-- --- Work --- -->
-
-	<div class="container_4k">
-		<div class="slider" id="work">
-			<div class="slider_wrapper">
-				<div class="slider_items">
-					<div class="slider_item">
-						<div class="work_foto">
-							<img class="image_modal" src="./assets/img/work/1.jpg" alt="">
-						</div>
-						<div class="work_title">Заголовок 1</div>
-						<div class="work_suptitle">Описание</div>
-					</div>
-					<div class="slider_item">
-						<div class="work_foto">
-							<img class="image_modal" src="./assets/img/work/2.jpg" alt="">
-						</div>
-						<div class="work_title">Заголовок 2</div>
-						<div class="work_suptitle">Описание</div>
-					</div>
-					<div class="slider_item">
-						<div class="work_foto">
-							<img class="image_modal" src="./assets/img/work/3.jpg" alt="">
-						</div>
-						<div class="work_title">Заголовок 3</div>
-						<div class="work_suptitle">Описание</div>
-					</div>
-					<div class="slider_item">
-						<div class="work_foto">
-							<img class="image_modal" src="./assets/img/work/1.jpg" alt="">
-						</div>
-						<div class="work_title">Заголовок 4</div>
-						<div class="work_suptitle">Описание</div>
-					</div>
-					<div class="slider_item">
-						<div class="work_foto">
-							<img class="image_modal" src="./assets/img/work/2.jpg" alt="">
-						</div>
-						<div class="work_title">Заголовок 5</div>
-						<div class="work_suptitle">Описание</div>
-					</div>
-					<div class="slider_item">
-						<div class="work_foto">
-							<img class="image_modal" src="./assets/img/work/3.jpg" alt="">
-						</div>
-						<div class="work_title">Заголовок 6</div>
-						<div class="work_suptitle">Описание</div>
-					</div>
-				</div>
-			</div>
-			<a class="slider_control" data-slide="prev"></a>
-			<a class="slider_control" data-slide="next"></a>
-		</div>
-	</div>
-
 	<!-- --- Footer --- -->
 
 	<footer class="footer" id="footer">
@@ -239,10 +242,12 @@
 							<div id="modal" class="modal">
 								<div class="modal-dialog">
 									<div class="modal-content">
+
 										<div class="modal-header">
 											Отправить нам сообщение
 											<a href="#" title="Close" class="close" data-target="close">×</a>
 										</div>
+
 										<div class="modal-body">
 											<form class="form" action="">
 												<input class="input_name input_txt" name="name" type="text" placeholder="Ваше имя" />
@@ -278,4 +283,6 @@
 	<script src="./assets/js/modal_feedback.js"></script>
 	<script src="assets/js/preloader.js"></script>
 
-</body></html>
+</body>
+
+</html>

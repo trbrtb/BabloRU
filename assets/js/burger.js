@@ -4,13 +4,11 @@ $(function () {
 		event.preventDefault();
 
 		$(this).toggleClass("active");
+		$("#body").toggleClass("active");
 		$("#header").toggleClass("active");
+		$("#logo_black").toggleClass("active");
+		$("#logo_white").toggleClass("active");
+		$("#rct").toggleClass("active");
 		$("#nav").toggleClass("active");
-	});
-
-	$("#nav").on("click", function (event) {
-		event.preventDefault();
-
-		$("#burger").trigger("click");
 	});
 });

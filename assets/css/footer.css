@@ -2,8 +2,6 @@ footer {
 	background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7)), url(../img/footer-bg.jpg) center no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
-	border-top-left-radius: 2em;
-	border-top-right-radius: 2em;
 	scroll-margin-top: 50px;
 	overflow: hidden;
 }
@@ -68,14 +66,14 @@ footer:root .safari_only {
 }
 
 .input_name {
-	width: 50%;
+	width: 70%;
 	height: 2em;
 	margin-bottom: 1em;
 	border-radius: .8rem;
 }
 
 .input_phone {
-	width: 50%;
+	width: 70%;
 	height: 2em;
 	margin-bottom: 1em;
 	border-radius: .8rem;
@@ -86,11 +84,14 @@ footer:root .safari_only {
 	height: 10em;
 	margin-bottom: 1em;
 	border-radius: .8rem;
+	resize: none;
 }
 
 .input_btn {
 	width: 8em;
 	height: 2em;
+	border-radius: .4rem;
+	line-height: 0;
 }
 
 .contact {
@@ -251,15 +252,26 @@ footer:root .safari_only {
 }
 
 .modal-header {
-	padding: 15px;
+	position: relative;
+	font-family: 'Comfortaa', cursive;
+	font-size: 2em;
+	padding: .5em 1.4em;
 	border-bottom: 1px solid #eceeef;
 }
 
+.modal-header a {
+	font-size: 1.3em;
+	color: #000;
+	opacity: .5;
+}
+
 .close {
+	position: absolute;
+	top: 0;
+	right: .2em;
 	font-family: sans-serif;
 	font-size: 24px;
 	font-weight: 700;
-	opacity: .5;
 	cursor: pointer;
 }
 
@@ -336,6 +348,10 @@ footer:root .safari_only {
 	.social_group:hover {
 		transform: translate(0, 0);
 	}
+
+	.form {
+		padding: 0;
+	}
 }
 
 @media screen and (max-width: 850px) {
@@ -343,6 +359,10 @@ footer:root .safari_only {
 	.social a {
 		font-size: 1em;
 		letter-spacing: 0em;
+	}
+
+	.modal-header a {
+		font-size: 1.3em;
 	}
 }
 
@@ -358,6 +378,14 @@ footer:root .safari_only {
 
 	.social a {
 		font-size: .9em;
+	}
+
+	.modal-header {
+		font-size: 1.5em;
+	}
+
+	.modal-header a {
+		font-size: 1.3em;
 	}
 }
 
@@ -413,6 +441,10 @@ footer:root .safari_only {
 	.social_group:first-child {
 		margin-top: 0em;
 	}
+
+	.modal-header a {
+		font-size: 1.3em;
+	}
 }
 
 @media screen and (max-width: 555px) {
@@ -426,7 +458,7 @@ footer:root .safari_only {
 	}
 
 	.social {
-		width: 40%;
+		width: 50%;
 	}
 
 	.social a {
@@ -440,11 +472,14 @@ footer:root .safari_only {
 	.content_hide {
 		display: block;
 	}
-}
 
-@media screen and (max-width: 555px) {
-	.social {
-		width: 50%;
+	.modal-header {
+		font-size: 1.1em;
+		padding: .6em 2.2em;
+	}
+
+	.modal-header a {
+		font-size: 2em;
 	}
 }
 
@@ -482,6 +517,18 @@ footer:root .safari_only {
 	.social a {
 		font-size: 1.4em;
 	}
+
+	.input_name {
+		width: 100%;
+	}
+
+	.input_phone {
+		width: 100%;
+	}
+
+	.modal-header a {
+		font-size: 2em;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -514,5 +561,14 @@ footer:root .safari_only {
 
 	.social_group {
 		margin-top: .7em;
+	}
+
+	.modal-header {
+		font-size: .9em;
+		padding: 1.1em 2em;
+	}
+
+	.modal-header a {
+		font-size: 2em;
 	}
 }
