@@ -23,6 +23,7 @@
 
 	<!-- --- Preloader --- -->
 
+
 	<div class="preloader">
 		<div class="preloader_loader">
 			<span>Загрузка...</span>
@@ -33,24 +34,26 @@
 
 	<header class="header" id="header">
 		<div class="container">
-			<div class="header_inner">
+			<div class="header_body">
 				<div class="logo">
-					<img class="logo_black" id="logo_black" src="./assets/img/logo-black.png" alt="">
-					<img class="logo_white" id="logo_white" src="./assets/img/logo-white.png" alt="">
-					<a class="scroll-to" href="#intro">
-						<h1 class="rct" id="rct">РЦТ</h1>
-					</a>
+					<p class="rct1"><span>Р</span>емонт <span>Ц</span>ифровой<br><span>Т</span>ехники</p>
+					<p class="rct2"><span>Р</span>емонт <span>Ц</span>ифровой <span>Т</span>ехники</p>
+					<p class="rct3">РЦТ</p>
 				</div>
-				<div class="nav" id="nav">
-					<a class="nav_link scroll-to" href="#services">Услуги</a>
-					<a class="nav_link scroll-to" href="#work">Наши работы</a>
-					<a class="nav_link scroll-to" href="#footer">Контакты</a>
-					<a class="nav_link" href="comments.html">Отзывы</a>
+				<div class="header_burger">
+					<span></span>
 				</div>
-				<a class="nav_link nav_4k scroll-to" href="#footer">Наш адрес: г. Балаково, ул. Пионерская 1а</a>
-				<button class="burger" id="burger" type="button">
-					<span class="burger_item"></span>
-				</button>
+				<nav class="header_menu">
+					<ul class="nav_menu">
+						<a class="nav_link scroll-to" id="nav_link" href="#services">Услуги</a>
+						<a class="nav_link scroll-to" id="nav_link" href="#work">Наши работы</a>
+						<a class="nav_link scroll-to" id="nav_link" href="#footer">Контакты</a>
+						<a class="nav_link" href="#">Отзывы</a>
+					</ul>
+				</nav>
+				<a class="nav_4k scroll-to" href="#footer">Наш адрес: г. Балаково, ул. Пионерская 1а</a>
+				<a class="nav_link_back" href="#">Вернуться назад</a>
+				<a class="nav_link_back" href="#">Назад</a>
 			</div>
 		</div>
 	</header>
@@ -195,6 +198,7 @@
 		</div>
 
 	</div>
+
 	<!-- --- Footer --- -->
 
 	<footer class="footer" id="footer">
@@ -242,12 +246,10 @@
 							<div id="modal" class="modal">
 								<div class="modal-dialog">
 									<div class="modal-content">
-
 										<div class="modal-header">
 											Отправить нам сообщение
 											<a href="#" title="Close" class="close" data-target="close">×</a>
 										</div>
-
 										<div class="modal-body">
 											<form class="form" action="">
 												<input class="input_name input_txt" name="name" type="text" placeholder="Ваше имя" />
@@ -283,6 +285,4 @@
 	<script src="./assets/js/modal_feedback.js"></script>
 	<script src="assets/js/preloader.js"></script>
 
-</body>
-
-</html>
+</body></html>

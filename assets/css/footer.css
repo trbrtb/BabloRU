@@ -51,6 +51,7 @@ footer:root .safari_only {
 }
 
 .input_txt {
+	-webkit-appearance: none;
 	font-family: 'Comfortaa', cursive;
 	font-size: 1em;
 	padding: .5em;
@@ -88,6 +89,7 @@ footer:root .safari_only {
 }
 
 .input_btn {
+	-webkit-appearance: none;
 	width: 8em;
 	height: 2em;
 	border-radius: .4rem;
@@ -255,7 +257,7 @@ footer:root .safari_only {
 	position: relative;
 	font-family: 'Comfortaa', cursive;
 	font-size: 2em;
-	padding: .5em 1.4em;
+	padding: .5em 2em .5em 1.5em;
 	border-bottom: 1px solid #eceeef;
 }
 
@@ -391,6 +393,11 @@ footer:root .safari_only {
 
 @media screen and (max-width: 600px) {
 	footer {
+		-webkit-background-size: 300% 100%;
+		background-size: 300% 100%;
+	}
+
+	footer {
 		border-radius: 0;
 	}
 
@@ -475,7 +482,7 @@ footer:root .safari_only {
 
 	.modal-header {
 		font-size: 1.1em;
-		padding: .6em 2.2em;
+		padding: 1em 2.4em 1em 1.7em;
 	}
 
 	.modal-header a {
@@ -564,11 +571,27 @@ footer:root .safari_only {
 	}
 
 	.modal-header {
-		font-size: .9em;
-		padding: 1.1em 2em;
+		font-size: 1.1em;
+		padding: 1em 2.4em 1em 1.7em;
 	}
 
 	.modal-header a {
 		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+	.modal-header {
+		font-size: 1em;
+		padding: 1em 2.5em 1em 2em;
+	}
+}
+
+@media screen and (max-width: 330px) {
+
+	.modal-header {
+		font-size: .9em;
+		padding: 1em 2.4em 1em 1.9em;
 	}
 }
