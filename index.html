@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="./assets/css/services.css">
 	<link rel="stylesheet" href="./assets/css/work.css">
 	<link rel="stylesheet" href="./assets/css/footer.css">
-	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/jquery-3.6.1.min.js"></script>
 	<title>РЦТ</title>
 </head>
 
@@ -32,6 +32,33 @@
 
 	<!-- --- Header --- -->
 
+	<header class="header {% if this.page.id != 'home' %}header_overpage{% endif %}" id="header">
+		<div class="container">
+			<div class="header_body">
+				<div class="logo {% if this.page.id != 'home' %}logo_overpage{% endif %}">
+					<p class="rct1 {% if this.page.id != 'home' %}rct1_overpage{% endif %}"><span>Р</span>емонт <span>Ц</span>ифровой<br><span>Т</span>ехники</p>
+					<p class="rct2 {% if this.page.id != 'home' %}rct2_overpage{% endif %}"><span>Р</span>емонт <span>Ц</span>ифровой <span>Т</span>ехники</p>
+					<p class="rct3 {% if this.page.id != 'home' %}rct3_overpage{% endif %}">РЦТ</p>
+				</div>
+				<div class="header_burger {% if this.page.id != 'home' %}overpage_disable{% endif %}">
+					<span></span>
+				</div>
+				<nav class="header_menu {% if this.page.id != 'home' %}overpage_disable{% endif %}">
+					<ul class="nav_menu">
+						<a class="nav_link scroll-to" id="nav_link" href="#services">Услуги</a>
+						<a class="nav_link scroll-to" id="nav_link" href="#work">Наши работы</a>
+						<a class="nav_link scroll-to" id="nav_link" href="#footer">Контакты</a>
+						<a class="nav_link" href="{{ 'comments'|page }}">Отзывы</a>
+					</ul>
+				</nav>
+				<a class="nav_4k scroll-to {% if this.page.id != 'home' %}overpage_disable{% endif %}" href="#footer">Наш адрес: г. Балаково, ул. Пионерская 1а</a>
+				<a class="nav_link_back {% if this.page.id != 'home' %}nav_link_back_pc{% endif %}" href="{{ 'home'|page }}">Вернуться назад</a>
+				<a class="nav_link_back {% if this.page.id != 'home' %}nav_link_back_mobile{% endif %}" href="{{ 'home'|page }}">Назад</a>
+			</div>
+		</div>
+	</header>
+
+	<!--
 	<header class="header" id="header">
 		<div class="container">
 			<div class="header_body">
@@ -57,6 +84,7 @@
 			</div>
 		</div>
 	</header>
+-->
 
 	<div class="page">
 
