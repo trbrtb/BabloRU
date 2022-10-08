@@ -1,6 +1,6 @@
 $(document).ready(function () {
-	$('.social_margin').click(function (event) {
-		$('.modal,.modal_wrapper,.modal_header,.close_modal').toggleClass('active');
+	$('.open_modal').click(function (event) {
+		$('.modal').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
 });
