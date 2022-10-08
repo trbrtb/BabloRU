@@ -6,16 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
-	<link rel="stylesheet" href="./assets/css/preloader.css">
+	<script src="./assets/js/jquery-3.6.1.min.js"></script>
+<!--	<link rel="stylesheet" href="./assets/css/preloader.css">-->
 	<link rel="stylesheet" href="./assets/css/null.css">
-	<link rel="stylesheet" href="./assets/css/aos.css">
+<!--	<link rel="stylesheet" href="./assets/css/aos.css">-->
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="./assets/css/header.css">
 	<link rel="stylesheet" href="./assets/css/intro.css">
 	<link rel="stylesheet" href="./assets/css/services.css">
 	<link rel="stylesheet" href="./assets/css/work.css">
 	<link rel="stylesheet" href="./assets/css/footer.css">
-	<script src="./assets/js/jquery-3.6.1.min.js"></script>
+	<link rel="stylesheet" href="{{ 'assets/css/comments.css'|theme }}">
 	<title>РЦТ</title>
 </head>
 
@@ -23,12 +24,13 @@
 
 	<!-- --- Preloader --- -->
 
-
+	<!--
 	<div class="preloader">
 		<div class="preloader_loader">
 			<span>Загрузка...</span>
 		</div>
 	</div>
+-->
 
 	<!-- --- Header --- -->
 
@@ -57,34 +59,6 @@
 			</div>
 		</div>
 	</header>
-
-	<!--
-	<header class="header" id="header">
-		<div class="container">
-			<div class="header_body">
-				<div class="logo">
-					<p class="rct1"><span>Р</span>емонт <span>Ц</span>ифровой<br><span>Т</span>ехники</p>
-					<p class="rct2"><span>Р</span>емонт <span>Ц</span>ифровой <span>Т</span>ехники</p>
-					<p class="rct3">РЦТ</p>
-				</div>
-				<div class="header_burger">
-					<span></span>
-				</div>
-				<nav class="header_menu">
-					<ul class="nav_menu">
-						<a class="nav_link scroll-to" id="nav_link" href="#services">Услуги</a>
-						<a class="nav_link scroll-to" id="nav_link" href="#work">Наши работы</a>
-						<a class="nav_link scroll-to" id="nav_link" href="#footer">Контакты</a>
-						<a class="nav_link" href="#">Отзывы</a>
-					</ul>
-				</nav>
-				<a class="nav_4k scroll-to" href="#footer">Наш адрес: г. Балаково, ул. Пионерская 1а</a>
-				<a class="nav_link_back" href="#">Вернуться назад</a>
-				<a class="nav_link_back" href="#">Назад</a>
-			</div>
-		</div>
-	</header>
--->
 
 	<div class="page">
 
@@ -237,13 +211,20 @@
 				<p class="address_txt content_hide">г. Балаково,<br class="br_visible"> ул. Пионерская 1а</p>
 			</div>
 			<div class="footer_inner">
-				<div class="feedback" data-aos="fade-right">
-					<form class="form" action="">
-						<input class="input_name input_txt" name="name" type="text" placeholder="Ваше имя" />
-						<input class="input_phone input_txt" name="phone" type="phone" placeholder="Ваш телефон">
-						<textarea class="input_message input_txt" placeholder="Введите ваше сообщение"></textarea>
-						<input class="input_btn input_txt" type="submit" value="Отправить" />
-					</form>
+				<div class="modal" data-aos="fade-right">
+					<div class="modal_wrapper">
+						<div class="modal_header">
+							<h1>Отправить сообщение</h1>
+						</div>
+						<span class="close_modal"></span>
+						<form class="form" action="">
+							<input class="input_name input_txt" name="name" type="text" placeholder="Ваше имя" />
+							<input class="input_name input_txt" name="name" type="text" placeholder="Ваше имя" />
+							<input class="input_phone input_txt" name="phone" type="phone" placeholder="Ваш телефон">
+							<textarea class="input_message input_txt" placeholder="Введите ваше сообщение"></textarea>
+							<input class="input_btn input_txt" type="submit" value="Отправить" />
+						</form>
+					</div>
 				</div>
 				<div class="contact">
 					<div class="contact_inner">
@@ -263,7 +244,7 @@
 								</svg>
 								<div class="social_margin">+7 (937) 804-89-08</div>
 							</a>
-							<a class="social_massage social_group" href="#" data-target="modal">
+							<a class="social_massage social_group">
 								<svg class="icon" viewBox="0 0 100 100">
 									<path class="st0" d="M88,100H12c-6.6,0-12-5.4-12-12V12C0,5.4,5.4,0,12,0h76c6.6,0,12,5.4,12,12v76C100,94.6,94.6,100,88,100z" />
 									<path class="st1" d="M76,72.5H24c-2.6,0-4.7-2.1-4.7-4.7V32.1c0-2.6,2.1-4.7,4.7-4.7H76c2.6,0,4.7,2.1,4.7,4.7v35.8C80.7,70.5,78.6,72.5,76,72.5z" />
@@ -271,24 +252,6 @@
 								</svg>
 								<div class="social_margin">Написать нам</div>
 							</a>
-							<div id="modal" class="modal">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-header">
-											Отправить нам сообщение
-											<a href="#" title="Close" class="close" data-target="close">×</a>
-										</div>
-										<div class="modal-body">
-											<form class="form" action="">
-												<input class="input_name input_txt" name="name" type="text" placeholder="Ваше имя" />
-												<input class="input_phone input_txt" name="phone" type="phone" placeholder="Ваш телефон">
-												<textarea class="input_message input_txt" placeholder="Введите ваше сообщение"></textarea>
-												<input class="input_btn input_txt" type="submit" value="Отправить" />
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
 							<a class="social_vk social_group" href="https://vk.com/iphone_mastep">
 								<svg class="icon" viewBox="0 0 100 100">
 									<path class="st0" d="M88,100H12c-6.6,0-12-5.4-12-12V12C0,5.4,5.4,0,12,0h76c6.6,0,12,5.4,12,12v76C100,94.6,94.6,100,88,100z" />
@@ -304,7 +267,7 @@
 		</div>
 	</footer>
 
-	<script src="assets/js/aos.js"></script>
+<!--	<script src="assets/js/aos.js"></script>-->
 	<script src="assets/js/scroll_nav.js"></script>
 	<script src="assets/js/header-scroll.js"></script>
 	<script src="assets/js/burger.js"></script>
