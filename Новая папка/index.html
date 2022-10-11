@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+	<script src="./assets/js/jquery-3.6.1.min.js"></script>
+	<link rel="stylesheet" href="./assets/css/preloader.css">
+	<link rel="stylesheet" href="./assets/css/null.css">
+	<link rel="stylesheet" href="./assets/css/aos.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/header.css">
+	<link rel="stylesheet" href="./assets/css/intro.css">
+	<link rel="stylesheet" href="./assets/css/services.css">
+	<link rel="stylesheet" href="./assets/css/work.css">
+	<link rel="stylesheet" href="./assets/css/footer.css">
+	<link rel="stylesheet" href="{{ 'assets/css/comments.css'|theme }}">
+	<title>РЦТ</title>
+</head>
+
+<body id="body">
+
+	<!-- --- Preloader --- -->
+
+	<div class="preloader">
+		<div class="preloader_loader">
+			<span>Загрузка...</span>
+		</div>
+	</div>
+
+	<!-- --- Header --- -->
+
+	<header class="header {% if this.page.id != 'home' %}header_overpage{% endif %}" id="header">
+		<div class="container">
+			<div class="header_body">
+				<div class="logo {% if this.page.id != 'home' %}logo_overpage{% endif %}">
+					<p class="rct1 {% if this.page.id != 'home' %}rct1_overpage{% endif %}"><span>Р</span>емонт <span>Ц</span>ифровой<br><span>Т</span>ехники</p>
+					<p class="rct2 {% if this.page.id != 'home' %}rct2_overpage{% endif %}"><span>Р</span>емонт <span>Ц</span>ифровой <span>Т</span>ехники</p>
+					<p class="rct3 {% if this.page.id != 'home' %}rct3_overpage{% endif %}">РЦТ</p>
+				</div>
+				<div class="header_burger {% if this.page.id != 'home' %}overpage_disable{% endif %}">
+					<span></span>
+				</div>
+				<nav class="header_menu {% if this.page.id != 'home' %}overpage_disable{% endif %}">
+					<ul class="nav_menu">
+						<a class="nav_link scroll-to" id="nav_link" href="#services">Услуги</a>
+						<a class="nav_link scroll-to" id="nav_link" href="#work">Наши работы</a>
+						<a class="nav_link scroll-to" id="nav_link" href="#footer">Контакты</a>
+						<a class="nav_link" href="{{ 'comments'|page }}">Отзывы</a>
+					</ul>
+				</nav>
+				<a class="nav_4k scroll-to {% if this.page.id != 'home' %}overpage_disable{% endif %}" href="#footer">Наш адрес: г. Балаково, ул. Пионерская 1а</a>
+				<a class="nav_link_back {% if this.page.id != 'home' %}nav_link_back_pc{% endif %}" href="{{ 'home'|page }}">Вернуться назад</a>
+				<a class="nav_link_back {% if this.page.id != 'home' %}nav_link_back_mobile{% endif %}" href="{{ 'home'|page }}">Назад</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="page">
+
+		<!-- --- Intro --- -->
+
+		<div class="container">
+			<div class="intro" id="intro">
+				<div class="intro_text">
+					<h1 class="title" data-aos="fade-right" data-aos-delay="0">Ремонт цифровой техники</h1>
+					<h2 class="suptitle" data-aos="fade-left" data-aos-delay="0">Простые решения для сложных проблем</h2>
+					<h3 class="desc" data-aos="fade-up" data-aos-delay="0">Осуществляем широкий спектр профессиональных услуг по ремонту цифровой техники
+						любой сложности</h3>
+				</div>
+				<div class="intro_bg" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true">
+					<img class="intro_bg_img_normal" src="./assets/img/intro-bg.png" alt="">
+					<img class="intro_bg_img_opacity" src="./assets/img/intro-bg_opacity.png" alt="">
+				</div>
+			</div>
+		</div>
+
+		<!-- --- Services --- -->
+
+		<div class="services" id="services">
+			<div class="container_4k">
+				<div class="services_inner">
+					<div class="services_card" data-aos="zoom-in-up" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/phone.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Ремонт телефонов</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/remont_notebook.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Ремонт ноутбуков</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="400" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/tablet.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Ремонт планшетов</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="600" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/pc.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Ремонт системных блоков</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/desktop.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Ремонт мониторов</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/display.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Замена дисплея</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="400" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/firmware.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Прошивка техники</div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="services_card" data-aos="zoom-in-up" data-aos-delay="600" data-aos-once="true">
+						<img class="services_card_foto" src="./assets/img/services/notebook.jpg" alt="">
+						<div class="services_card_content">
+							<div class="services_title">Чистка ноутбуков и ПК</div>
+							<div class="line"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- --- Work --- -->
+
+		<div class="container_4k">
+			<div class="slider" id="work">
+				<div class="slider_wrapper">
+					<div class="slider_items">
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/1.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 1</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/2.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 2</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/3.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 3</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/1.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 4</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/2.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 5</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
+						<div class="slider_item">
+							<div class="work_foto">
+								<img class="image_modal" src="./assets/img/work/3.jpg" alt="">
+							</div>
+							<div class="work_title">Заголовок 6</div>
+							<div class="work_suptitle">Описание</div>
+						</div>
+					</div>
+				</div>
+				<a class="slider_control" data-slide="prev"></a>
+				<a class="slider_control" data-slide="next"></a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- --- Footer --- -->
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer_title" data-aos="fade-down">
+				<p class="send_message_txt">Отправить нам сообщение</p>
+				<p class="address_txt content_visible">Наш адрес: г. Балаково, ул. Пионерская 1а</p>
+				<p class="address_txt content_hide">г. Балаково,<br class="br_visible"> ул. Пионерская 1а</p>
+			</div>
+			<div class="footer_inner">
+				<div class="modal" data-aos="fade-right">
+					<div class="modal_wrapper">
+						<div class="modal_header">
+							<h1>Отправить сообщение</h1>
+						</div>
+						<span class="close_modal"></span>
+						<form class="form" action="">
+							<input class="input_name input_txt" name="name" type="text" placeholder="Ваше имя" />
+							<input class="input_name input_txt" name="name" type="text" placeholder="Ваше имя" />
+							<input class="input_phone input_txt" name="phone" type="phone" placeholder="Ваш телефон">
+							<textarea class="input_message input_txt" placeholder="Введите ваше сообщение"></textarea>
+							<input class="input_btn input_txt" type="submit" value="Отправить" />
+						</form>
+					</div>
+				</div>
+				<div class="contact">
+					<div class="contact_inner">
+						<div class="timework" data-aos="fade-left">
+							<p>Режим работы:</p>
+							<p class="time"> Пн-Пт: 10.00 - 19.00<br>Сб: 10.00 - 14.00<br>Вс: ВЫХОДНОЙ</p>
+						</div>
+						<div class="map animate_after" data-aos="fade-left" data-aos-delay="200">
+							<img class="map_bg image_modal" src="./assets/img/map_bg.png" alt="">
+							<iframe class="map_api" src="https://yandex.ru/map-widget/v1/?um=constructor%3A841bd4e63ac08566410088f46486e4b0836964716a381337a3bcf530d069fc33&amp;source=constructor" frameborder="0"></iframe>
+						</div>
+						<div class="social" data-aos="fade-up" data-aos-anchor=".animate_after" data-aos-delay="400">
+							<a class="social_number social_group" href="tel:+79378048908">
+								<svg class="icon" viewBox="0 0 100 100">
+									<path class="st0" d="M88,100H12c-6.6,0-12-5.4-12-12V12C0,5.4,5.4,0,12,0h76c6.6,0,12,5.4,12,12v76C100,94.6,94.6,100,88,100z" />
+									<path class="st1" d="M72.4,61c-13.7-10.6-7.6,13.4-27-7.2c-18.8-18,3.7-11.9-6.4-26.2c-5.4-8.1-13.1-3.7-15.8,3.6c-0.3,16.4,17.3,33.8,31.1,41.9c4.6,2.8,13.1,4.5,15.7,3.4C76.8,72.6,80,66.3,72.4,61z" />
+								</svg>
+								<div class="social_margin">+7 (937) 804-89-08</div>
+							</a>
+							<a class="social_massage social_group">
+								<svg class="icon" viewBox="0 0 100 100">
+									<path class="st0" d="M88,100H12c-6.6,0-12-5.4-12-12V12C0,5.4,5.4,0,12,0h76c6.6,0,12,5.4,12,12v76C100,94.6,94.6,100,88,100z" />
+									<path class="st1" d="M76,72.5H24c-2.6,0-4.7-2.1-4.7-4.7V32.1c0-2.6,2.1-4.7,4.7-4.7H76c2.6,0,4.7,2.1,4.7,4.7v35.8C80.7,70.5,78.6,72.5,76,72.5z" />
+									<path class="st1" d="M20.4,29.9l26.5,18.4c1.9,1.3,4.4,1.3,6.3,0.1l26.8-18" />
+								</svg>
+								<div class="social_margin open_modal">Написать нам</div>
+							</a>
+							<a class="social_vk social_group" href="https://vk.com/iphone_mastep">
+								<svg class="icon" viewBox="0 0 100 100">
+									<path class="st0" d="M88,100H12c-6.6,0-12-5.4-12-12V12C0,5.4,5.4,0,12,0h76c6.6,0,12,5.4,12,12v76C100,94.6,94.6,100,88,100z" />
+									<path class="st1" d="M15.8,34.5c0.9,8,11.8,26.6,19.5,32c4,2.9,15,6.3,19.4,4.1c2-1,1.5-7.9,3.7-8.4c3.2-0.8,7.1,7.3,10.2,8.4c3.6,1.3,13.2,3.3,15.2,0c1.3-2.3-3.5-7-5-9.2c-1.3-1.8-5.8-4.5-6-6.7c-0.2-3.5,6.1-8.4,7.8-11.5c1.1-2.1,4.9-6.7,3.6-8.7c-1.1-1.8-6.3-0.5-8.4-0.6c-1.7-0.1-5.2-0.9-6.6,0c-2.1,1.3-3.3,6.8-4.7,8.8c-1.6,2.4-4.7,9.5-7.4,8.7c-2.7-0.8-1.2-8.3-1.5-11c-0.2-1.8,0.5-5.9-0.7-7.2c-1.3-1.4-5.7-1.4-7.6-1.3C45,32,38.7,32,38.4,34.3c-0.1,0.8,2.3,1.1,2.7,1.8c1.1,1.6,1.5,5.5,1.5,7.4c0,2,0,7.2-1.9,7.7c-2.7,0.7-5.8-6-7.4-8.3c-1.4-2-2.5-7.3-4.5-8.6C27.6,33.6,15.6,32.7,15.8,34.5z" />
+								</svg>
+								<div class="social_margin content_visible">vk.com/iphone_mastep</div>
+								<div class="social_margin content_hide">iphone_mastep</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="assets/js/aos.js"></script>
+	<script src="assets/js/scroll_nav.js"></script>
+	<script src="assets/js/header-scroll.js"></script>
+	<script src="assets/js/burger.js"></script>
+	<script src="assets/js/slider.js"></script>
+	<script src="./assets/js/modal_slider.js"></script>
+	<script src="./assets/js/modal_feedback.js"></script>
+	<script src="assets/js/preloader.js"></script>
+
+</body>
+
+</html>
