@@ -5,42 +5,175 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
-	<link rel="stylesheet" type="text/css" href="./css/examples.css" />
-	<title></title>
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+	<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+	<script src="./assets/js/jquery-3.6.1.min.js"></script>
+	<link rel="stylesheet" href="./assets/css/null.css">
+	<link rel="stylesheet" href="./assets/css/preloader.css">
+	<link rel="stylesheet" href="./assets/css/fullpage.css" />
+	<!--	<link rel="stylesheet" href="./assets/css/aos.css">-->
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/header.css">
+	<link rel="stylesheet" href="./assets/css/intro.css">
+	<link rel="stylesheet" href="./assets/css/services.css">
+	<!--	<link rel="stylesheet" href="./assets/css/work.css">-->
+	<!--	<link rel="stylesheet" href="./assets/css/footer.css">-->
+	<!--	<link rel="stylesheet" href="./assets/css/comments.css">-->
+	<title>РЦТ</title>
 </head>
 
 <body>
-	<div id="fullpage">
-		<div class="section" id="section0">
-			<div class="intro">
-				<h1>Section 1</h1>
+
+	<!-- --- Preloader --- -->
+
+	<!--
+	<div class="preloader">
+		<div class="preloader_loader">
+			<div class="lds-spinner">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
 			</div>
 		</div>
-		<div class="section" id="section1">
-			<h1>Section 2</h1>
+	</div>
+-->
+
+	<!-- --- Header --- -->
+
+	<header class="header">
+		<div class="container">
+			<div class="header_inner">
+				<div class="header_logo">
+					<a class="header_logo_1" href="#intro">Ремонт Цифровой Техники</a>
+					<a class="header_logo_2" href="#intro">РЦТ</a>
+				</div>
+				<nav class="header_nav">
+					<ul class="nav_menu" id="menu">
+						<a data-menuanchor="services" class="nav_link" href="#services">Услуги</a>
+						<a data-menuanchor="work" class="nav_link" href="#work">Наши работы</a>
+						<a data-menuanchor="contacts" class="nav_link" href="#contacts">Контакты</a>
+						<a data-menuanchor="reviews" class="nav_link" href="#">Отзывы</a>
+					</ul>
+				</nav>
+				<div class="header_burger">
+					<span></span>
+				</div>
+			</div>
 		</div>
-		<div class="section" id="section2">
-			<h1>Section 3</h1>
+	</header>
+
+	<div id="fullpage">
+
+		<div class="section">
+			<!-- --- Intro --- -->
+			<div class="container">
+				<div class="intro">
+					<div class="intro_text">
+						<h1 class="title" data-aos="fade-right" data-aos-delay="0">Ремонт цифровой техники</h1>
+						<h2 class="suptitle" data-aos="fade-left" data-aos-delay="0">Простые решения для сложных проблем</h2>
+						<h3 class="desc" data-aos="fade-up" data-aos-delay="0">Осуществляем широкий спектр профессиональных услуг по ремонту цифровой техники
+							любой сложности</h3>
+					</div>
+					<div class="intro_bg" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true">
+						<img class="intro_bg_img_normal" src="./assets/img/intro-bg.png">
+						<img class="intro_bg_img_opacity" src="./assets/img/intro-bg_opacity.png">
+					</div>
+				</div>
+			</div>
+			<!-- --- Intro --- -->
+		</div>
+
+		<div class="section qwe">
+			<!-- --- Services --- -->
+			<div class="container_1920">
+				<div class="services">
+					<div class="services_inner">
+						<div class="services_card" data-aos="zoom-in-up" data-aos-once="true">
+							<img class="services_card_foto" src="./assets/img/services/phone.jpg" alt="">
+							<div class="services_title">Ремонт<br>телефонов</div>
+						</div>
+						<div class="services_card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-once="true">
+							<img class="services_card_foto" src="./assets/img/services/remont_notebook.jpg" alt="">
+							<div class="services_title">Ремонт<br>ноутбуков</div>
+						</div>
+						<div class="services_card" data-aos="zoom-in-up" data-aos-delay="400" data-aos-once="true">
+							<img class="services_card_foto" src="./assets/img/services/tablet.jpg" alt="">
+							<div class="services_title">Ремонт<br>планшетов</div>
+						</div>
+						<div class="services_card" data-aos="zoom-in-up" data-aos-delay="600" data-aos-once="true">
+							<img class="services_card_foto" src="./assets/img/services/pc.jpg" alt="">
+							<div class="services_title">Ремонт<br>системных блоков</div>
+						</div>
+						<div class="services_card" data-aos="zoom-in-up" data-aos-once="true">
+							<img class="services_card_foto" src="./assets/img/services/desktop.jpg" alt="">
+							<div class="services_title">Ремонт<br>мониторов</div>
+						</div>
+						<div class="services_card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-once="true">
+							<img class="services_card_foto" src="./assets/img/services/display.jpg" alt="">
+							<div class="services_title">Замена<br>дисплея</div>
+						</div>
+						<div class="services_card" data-aos="zoom-in-up" data-aos-delay="400" data-aos-once="true">
+							<img class="services_card_foto" src="./assets/img/services/firmware.jpg" alt="">
+							<div class="services_title">Прошивка<br>техники</div>
+						</div>
+						<div class="services_card" data-aos="zoom-in-up" data-aos-delay="600" data-aos-once="true">
+							<img class="services_card_foto" src="./assets/img/services/notebook.jpg" alt="">
+							<div class="services_title">Чистка<br>ноутбуков и ПК</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- --- Services --- -->
+
+		</div>
+
+		<div class="section">
+
+			<!-- --- Work --- -->
+
+			<div class="container">
+				<div class="intro">
+					<div class="intro_text">
+						<h1 class="title" data-aos="fade-right" data-aos-delay="0">Ремонт цифровой техники</h1>
+						<h2 class="suptitle" data-aos="fade-left" data-aos-delay="0">Простые решения для сложных проблем</h2>
+						<h3 class="desc" data-aos="fade-up" data-aos-delay="0">Осуществляем широкий спектр профессиональных услуг по ремонту цифровой техники
+							любой сложности</h3>
+					</div>
+					<div class="intro_bg" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true">
+						<img class="intro_bg_img_normal" src="./assets/img/intro-bg.png">
+						<img class="intro_bg_img_opacity" src="./assets/img/intro-bg_opacity.png">
+					</div>
+				</div>
+			</div>
+
+			<!-- --- Work --- -->
+		</div>
+
+		<div class="section">
+
+			<!-- --- Contacts --- -->
+
+			<!-- --- Contacts --- -->
+
 		</div>
 	</div>
-	<script type="text/javascript" src="./js/fullpage.js"></script>
 
-	<script type="text/javascript">
-		var myFullpage = new fullpage('#fullpage', {
-			sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-			anchors: ['firstPage', 'secondPage', '3rdPage'],
-			navigation: true,
-			navigationTooltips: ['Page 1', 'Page 2', 'Page 3'],
-			showActiveTooltip: true,
-		});
-	</script>
+	<script src="assets/js/fullpage.min.js"></script>
+	<script src="assets/js/fullpage_option.js"></script>
+	<!--	<script src="assets/js/aos.js"></script>-->
+	<script src="assets/js/burger.js"></script>
+	<!--	<script src="assets/js/slider.js"></script>-->
+	<!--	<script src="./assets/js/modal_slider.js"></script>-->
+	<!--	<script src="./assets/js/modal_feedback.js"></script>-->
+	<script src="assets/js/preloader.js"></script>
 
-</body>
-
-</html>
+</body></html>
