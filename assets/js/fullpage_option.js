@@ -1,5 +1,5 @@
 var myFullpage = new fullpage('#fullpage', {
-	sectionsColor: ['#fcfcfc', '#fcfcfc', '#fcfcfc', '#fcfcfc', '#fcfcfc'],
+	sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
 	anchors: ['intro', 'services', 'work', 'contacts', 'reviews'],
 	navigation: false,
 	navigationTooltips: ['intro', 'services', 'work', 'contacts', 'reviews'],
