@@ -21,6 +21,7 @@ body {
 
 .container {
 	width: 100%;
+	height: 100%;
 	max-width: 81.25em;
 	margin: 0 auto;
 	padding: 0 0.938em;
@@ -28,6 +29,7 @@ body {
 
 .container_1920 {
 	width: 100%;
+	height: 100%;
 	max-width: 143.75em;
 	margin: 0 auto;
 }
