@@ -16,8 +16,8 @@ $(document).ready(function () {
         draggable: true, //Перемещать слайды мышкой на ПК
         swipe: true, //Перемещать слайды пальцем на мобильных устройствах
         touchThreshold: 10, //Чувствительность перемещения слайда
-        touchMove: true, //Драг слайда
-        waitForAnimate: true, //Быстрая смена слайда при клике на стрелку
+        touchMove: false, //Драг слайда
+        waitForAnimate: false, //Быстрая смена слайда при клике на стрелку
         centerMode: false, //Активный слайд по центру
         variableWidth: false, //Автомотическая ширина слайдов
         rows: 1, //Ряды слайда
@@ -28,6 +28,15 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2,
                     dots: false,
+                }
+        			},
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    dots: false,
+                    touchMove: true,
+                    waitForAnimate: true,
                 }
         			},
             {
