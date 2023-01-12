@@ -8,8 +8,8 @@ $(document).ready(function () {
         easing: 'linear', // Тип анимации
         infinite: true, // Зацикливание
         initialSlide: 0, // Стартовый слайд
-        autoplay: false,
-        autoplaySpeed: 4000,
+        autoplay: true,
+        autoplaySpeed: 3000,
         pauseOnFocus: true, //Пауза при клике мышки на слайд
         pauseOnHover: true, //Пауза при наведении мышки на слайд
         pauseOnDotsHover: true, //Пауза при наведении мышки на точки
