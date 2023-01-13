@@ -33,8 +33,9 @@ $(document).ready(function () {
             {
                 breakpoint: 769,
                 settings: {
-                    slidesToShow: 2,
                     dots: false,
+                    slidesToShow: 2,
+                    autoplay: false,
                     touchMove: true,
                     waitForAnimate: true,
                 }
@@ -45,7 +46,7 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     dots: false,
                 }
-        			}
+        			},
         		],
         //        mobileFirst: false, // Смена min-withs/max-withs
     });
