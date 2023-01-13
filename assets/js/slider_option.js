@@ -9,7 +9,7 @@ $(document).ready(function () {
         infinite: true, // Зацикливание
         initialSlide: 0, // Стартовый слайд
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
         pauseOnFocus: true, //Пауза при клике мышки на слайд
         pauseOnHover: true, //Пауза при наведении мышки на слайд
         pauseOnDotsHover: true, //Пауза при наведении мышки на точки
@@ -43,8 +43,9 @@ $(document).ready(function () {
             {
                 breakpoint: 501,
                 settings: {
-                    slidesToShow: 1,
                     dots: false,
+                    slidesToShow: 1,                    
+                    autoplay: false,
                 }
         			},
         		],
