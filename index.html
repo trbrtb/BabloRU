@@ -16,9 +16,8 @@
     <link rel="stylesheet" href="./assets/css/intro.css">
     <link rel="stylesheet" href="./assets/css/services.css">
     <link rel="stylesheet" href="./assets/css/work.css">
-    <link rel="stylesheet" href="./assets/css/contacts.css">
     <link rel="stylesheet" href="./assets/css/about.css">
-    <!--	<link rel="stylesheet" href="./assets/css/comments.css">-->
+    <link rel="stylesheet" href="./assets/css/contacts.css">
     <title>РЦТ</title>
 </head>
 
@@ -562,38 +561,34 @@
                                     </div>
                                     <div class="close_modal_feedback">
                                     </div>
-                                    <form id="form-contact" method="POST" class="modal_feedback_formgroup contact-form"
-                                        autocomplete="on" enctype="multipart/form-data">
+                                    <form id="contact_form" method="POST" class="modal_feedback_formgroup contact_form" autocomplete="on" enctype="multipart/form-data">
                                         <div class="form_preloader">
                                             <div class="loader"></div>
                                         </div>
-                                        <div class="contact-form_message_wrapper">
-                                            <p class="contact-form_message"></p>
+                                        <div class="contact_form_message_wrapper">
+                                            <p class="contact_form_message"></p>
                                         </div>
                                         <div class="wrapper_contact form_hidden">
-                                            <input name="name" type="text" class="input_form input_contact"
-                                                placeholder="Ваше имя" required submit>
+                                            <input name="name" type="text" class="input_form input_contact" placeholder="Ваше имя" required>
                                         </div>
                                         <div class="wrapper_contact form_hidden">
-                                            <input name="phone" type="tel" class="input_form input_contact"
-                                                placeholder="Ваш телефон" required>
+                                            <input name="phone" type="tel" class="input_form input_contact" placeholder="Ваш телефон" required>
                                         </div>
-                                        <!-- <div class="wrapper_contact form_hidden">
-                                            <input name="theme" type="text" class="input_form input_contact"
-                                                placeholder="Тема">
-                                        </div> -->
+                                        <!--
+                                        <div class="wrapper_contact form_hidden">
+                                            <input name="theme" type="text" class="input_form input_contact" placeholder="Тема">
+                                        </div>
+-->
                                         <div class="wrapper_text form_hidden">
-                                            <textarea name="message" class="input_form input_text"
-                                                placeholder="Введите ваше сообщение и в ближайшее врямя я вам отвечу"
-                                                required></textarea>
+                                            <textarea name="message" class="input_form input_text" placeholder="Напишите ваше сообщение и в ближайшее врямя я вам отвечу" required></textarea>
                                         </div>
-                                        <div class="contact-form_input-wrapper">
-                                            <input type="file" name="files[]" id="contact-form_input_file"
-                                                class="contact-form_input contact-form_input_file" multiple>
-                                            <label for="contact-form_input_file"
-                                                class="contact-form_file-button form_hidden">
-                                                <span class="contact-form_file-text ">Прикрепить файл</span>
+                                        <div class="wrapper_choice_file">
+                                            <label class="contact_form_file_button form_hidden input-file">
+                                                <input type="file" name="files[]" id="contact_form_input_file" class="contact_form_input_file" multiple>
+                                                <span class="contact_form_file_text_1">Прикрепить файл</span>
+                                                <span class="contact_form_file_text_2 hide">Прикрепить файл</span>
                                             </label>
+                                            <div class="btn_del form_hidden hide" title="Удалить файлы"></div>
                                         </div>
                                         <div class="wrapper_btn form_hidden">
                                             <button type="submit" class="input_form input_btn">Отправить</button>
@@ -684,13 +679,13 @@
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/slider_option.js"></script>
     <script src="./assets/js/modal_foto_slider.js"></script>
+    <script src="assets/js/accordion_about.js"></script>
     <script src="./assets/js/telegramform.js"></script>
     <script src="./assets/js/telegramform_style_file.js"></script>
     <script src="./assets/js/telegramform_jquery.mask.min.js"></script>
     <script src="./assets/js/telegramform_mask.js"></script>
-    <script src="./assets/js/modal_feedback.js"></script>
     <script src="assets/js/modal_map.js"></script>
-    <script src="assets/js/accordion_about.js"></script>
+    <script src="./assets/js/modal_feedback.js"></script>
     <script src="assets/js/preloader.js"></script>
 
 </body>
