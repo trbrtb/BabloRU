@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('.map_bg').click(function (event) {
+	$('.map_bg, .img_load').click(function (event) {
 		$('.modal_map_api').toggleClass('active');
 	});
 });
