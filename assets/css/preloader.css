@@ -1,39 +1,34 @@
 /*Preloader*/
 .preloader {
     position: fixed;
-    width: 100%;
-    height: 100%;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
     background-color: #fff;
-    z-index: 9999;
+    z-index: 99999;
 }
 
 .wrapper_preloader {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 9998;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 99998;
 }
 
 .preloader .point1,
 .preloader .point2,
 .preloader .point3 {
-    position: absolute;
     width: 1em;
     height: 1em;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
     background-color: #696969;
     border-radius: 50%;
     display: inline-block;
     -webkit-animation: preloader 1.4s infinite ease-in-out both;
     animation: preloader 1.4s infinite ease-in-out both;
-    z-index: 9997;
+    z-index: 99997;
 }
 
 .preloader .point1 {
