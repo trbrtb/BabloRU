@@ -4,14 +4,8 @@ $(document).ready(function () {
         $('.header_burger,.header_nav, body').toggleClass('active');
     });
 
-    $('.about_front_arrow').click(function (event) {
-        $('.about_front_arrow').toggleClass('active');
+    $('.about_arrow').click(function (event) {
+        $('.wrapper_about, .about_image, .about_text, .about_text_title, .about_text_subtitle, .about_arrow, .about_text_bg, .wrapper_accordion').toggleClass('active');
     });
 
 });
-
-//$(document).ready(function () {
-//	$('.nav_link').click(function (event) {
-//		$('.header_burger,.header_nav').removeClass('active');
-//	});
-//});
