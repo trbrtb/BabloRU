@@ -3,8 +3,8 @@ $(document).ready(function () {
         arrows: false,
         slidesToShow: 1,
         fade: true,
-        draggable: false,
-        swipe: false,
+//        draggable: false,
+//        swipe: false,
         asNavFor: ".slider, .slider_description",
     })
 
@@ -12,8 +12,8 @@ $(document).ready(function () {
         arrows: false,
         slidesToShow: 1,
         fade: true,
-        draggable: false,
-        swipe: false,
+//        draggable: false,
+//        swipe: false,
         asNavFor: ".slider, .slider_big",
     })
 
