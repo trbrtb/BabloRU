@@ -16,4 +16,26 @@ $(document).ready(function () { // Ждём загрузки страницы
             $('body').removeClass('active');
         });
     });
+
+
+    // Загрузка яндекс карты
+    $(".open_modal_map").click(function () {
+
+        $(".wrapper_contacts").append("<div class='modal_map'>" +
+            "<div class='close_modal_map'></div>" +
+            "<iframe class='modal_map_api' src='https://yandex.ru/map-widget/v1/?um=constructor%3A841bd4e63ac08566410088f46486e4b0836964716a381337a3bcf530d069fc33&amp;source=constructor' frameborder='0'></iframe>" +
+            "</div>");
+
+        $('body').addClass('active');
+
+        $(".close_modal_map").click(function () {
+            $(".modal_map").fadeOut(200);
+            setTimeout(function () {
+                $(".modal_map").remove();
+            }, 200);
+            $('body').removeClass('active');
+        });
+
+    });
+
 });

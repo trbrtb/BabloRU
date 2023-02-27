@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/work.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/contacts.css">
+    <link rel="stylesheet" href="assets/css/form_style.css">
     <link rel="stylesheet" href="assets/css/reviews.css">
     <title>Ремонт цифровой техники</title>
 </head>
@@ -55,8 +56,8 @@
                         <a class="header_link" href="#services">Сервис</a>
                         <a class="header_link" href="#work">Мои работы</a>
                         <a class="header_link" href="#about">Обо мне</a>
-                        <a class="header_link" href="#">Контакты</a>
-                        <a class="header_link" href="#">Отзывы</a>
+                        <a class="header_link" href="#contacts">Контакты</a>
+                        <a class="header_link" href="#reviews">Отзывы</a>
                     </nav>
                     <nav>
                         <p class="header_link header_link_address header_visible_pc">Балаково, ул. Пионерская, 1а</p>
@@ -132,7 +133,7 @@
     </section>
 
     <section class="work">
-        <div class="bg_skew">
+        <div class="bg_skew_work">
             <div class="container">
                 <div id="work" class="wrapper_work">
                     <div class="slider_big work_visible_pc">
@@ -295,9 +296,8 @@
                     <p class="about_text_subtitle">Я дорожу каждым своим клиентом, поэтому высокое качество сервиса - для меня приоритет. Вы всегда можете задать мне интересующие вас вопросы и получить подробную консультацию.</p>
                     <a class="about_arrow" href="#about">
                         <svg viewBox="0 0 100 100">
-                            <polyline class="st3" points="20,35.9 49.8,65.7 80,35.9 " />
-                            <polyline class="st4" points="20,13.2 49.8,43 80,13.2 " />
-                            <polyline class="st5" points="20,57 49.8,86.8 80,57 " />
+                            <polyline class="about_arrow_st0" points="28.7,27.8 49.9,48.9 71.3,27.8 " />
+                            <polyline class="about_arrow_st0" points="20,42.4 49.8,72.2 80,42.4 " />
                         </svg>
                     </a>
                 </div>
@@ -369,18 +369,124 @@
         </div>
     </section>
 
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="wrapper_contacts">
+                <div class="contacts_content">
+                    <div class="wrapper_contacts_content">
+                        <p class="contacts_content_textstyle contacts_content_address content_visible_pc">Балаково, ул. Пионерская, 1а</p>
+                        <div class="contacts_content_inner">
+                            <div class="contacts_content_textstyle schedules">
+                                <h2>Режим работы:</h2>
+                                <p>Пн - Пт: 10:00-19:00</p>
+                                <p>Сб: 10:00-14:00</p>
+                                <p>Вс: <span>Выходной</span></p>
+                            </div>
+                            <div class="contacts_social">
+                                <a class="contacts_ico open_modal_map content_visible_mobile">
+                                    <svg class="ico_location" viewBox="0 0 100 100">
+                                        <rect class="st0" width="100" height="100" />
+                                        <ellipse class="ico_location_animate st1" cx="48.5" cy="76" rx="13.5" ry="2.9" />
+                                        <path class="ico_location_animate st1" d="M65.6,48.9c-0.6,15.6-17.1,28-17.1,28s-16-12.3-17.1-28c-1.1-15.4,7.6-28,17-28S66.2,33.5,65.6,48.9z" />
+                                        <path class="ico_location_animate st2" d="M55.8,45.9c-0.5,6.5-7.3,13.5-7.3,13.5s-6.6-7.2-7.3-13.5c-0.8-6.3,3.3-11.6,7.3-11.6S56.4,39.5,55.8,45.9z" />
+                                    </svg>
+                                    <div class="contacts_content_textstyle">ул. Пионерская, 1а</div>
+                                </a>
+                                <a class="contacts_ico" href="tel:+79378048908">
+                                    <svg class="ico_tel" viewBox="0 0 100 100">
+                                        <rect class="st0" width="100" height="100" />
+                                        <path class="st1" d="M74.7,62.1c-15.1-11.6-8.4,14.8-29.8-7.9C24.2,34.3,49,41,37.8,25.3c-5.9-8.9-14.4-4.1-17.4,4 c-0.3,18.1,19.1,37.3,34.3,46.2c5.1,3.1,14.4,5,17.3,3.7C79.5,74.9,83,67.9,74.7,62.1z" />
+                                    </svg>
+                                    <div class="contacts_content_textstyle">+7 (937) 804-89-08</div>
+                                </a>
+                                <a class="contacts_ico" href="https://vk.com/iphone_mastep">
+                                    <svg class="ico_vk" viewBox="0 0 100 100">
+                                        <rect class="st0" width="100" height="100" />
+                                        <path class="st1" d="M8.4,28.6C9.4,38.3,22.7,60.8,32,67.4c4.8,3.5,18.1,7.7,23.5,5c2.4-1.2,1.8-9.6,4.5-10.2 c3.9-1,8.6,8.8,12.4,10.2c4.3,1.6,16,4,18.4,0c1.6-2.7-4.2-8.5-6.1-11.2c-1.6-2.2-7-5.5-7.2-8.2c-0.2-4.2,7.4-10.2,9.5-13.9 c1.3-2.6,5.9-8.2,4.3-10.6c-1.3-2.2-7.7-0.6-10.2-0.7c-2.1-0.1-6.3-1.1-8,0c-2.6,1.6-4,8.2-5.7,10.7c-1.9,2.9-5.7,11.5-9,10.6 C55.2,48.2,57,39,56.6,35.8c-0.2-2.2,0.6-7.2-0.8-8.7c-1.6-1.7-6.9-1.7-9.2-1.6c-2.7,0.1-10.4,0.1-10.8,2.9c-0.1,1,2.7,1.3,3.2,2.2 c1.3,1.9,1.8,6.7,1.8,9c0,2.4,0,8.7-2.3,9.3c-3.2,0.8-7-7.2-9-10.1c-1.7-2.4-3-8.8-5.5-10.4C22.7,27.5,8.1,26.5,8.4,28.6z" />
+                                    </svg>
+                                    <div class="contacts_content_textstyle content_visible_pc">vk.com/iphone_mastep</div>
+                                    <div class="contacts_content_textstyle content_visible_mobile">iphone_mastep</div>
+                                </a>
+                                <a class="contacts_ico content_visible_mobile">
+                                    <svg class="ico_massage" viewBox="0 0 100 100">
+                                        <rect class="st0" width="100" height="100" />
+                                        <path class="st1" d="M77.1,74.6H23c-2,0-3.7-1.6-3.7-3.7V29.1c0-2,1.6-3.7,3.7-3.7H77c2,0,3.7,1.6,3.7,3.7v42.1 C80.7,73.1,79.1,74.6,77.1,74.6z" />
+                                        <path class="st2" d="M50,26.7" />
+                                        <path class="st2" d="M20.3,26.7l25.5,24.3c2.2,2,5.6,2,7.9,0l26-24.3" />
+                                    </svg>
+                                    <div class="contacts_content_textstyle open_modal_feedback">Написать сообщение</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact_feedback">
+                        <div class="wrapper_contact_feedback">
+                            <div class="feedback_header">
+                                <h1>Отправить сообщение</h1>
+                            </div>
+                            <div class="close_contact_feedback"></div>
+                            <form id="contact_form" method="POST" class="" autocomplete="on" enctype="multipart/form-data">
+                                <div class="form_preloader">
+                                    <div class="loader"></div>
+                                </div>
+                                <div class="contact_form_message_wrapper">
+                                    <p class="contact_form_message"></p>
+                                </div>
+                                <input name="name" type="text" class="input_style" placeholder="Ваше имя" required>
+                                <input name="phone" type="tel" class="input_style" placeholder="Ваш телефон" required>
+                                <textarea name="message" class="input_style_textarea" rows="5" placeholder="Напишите сообщение и в ближайшее врямя я вам отвечу" required></textarea>
+                                <div class="choice_file contact_choice_file">
+                                    <label class="choice_file_button contact_choice_file_button">
+                                        <input type="file" name="files[]" id="contact_input_file" class="input_file contact_input_file" multiple>
+                                        <img src="assets/img/ico_clip.svg" alt="">
+                                        <span class="choice_file_text contact_choice_file_text">Прикрепить файл</span>
+                                    </label>
+                                    <div class="choice_file_del contact_choice_file_del hide" title="Удалить файлы"></div>
+                                </div>
+
+                                <div class="wrapper_btn">
+                                    <button type="submit" class="btn_style">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="static_map open_modal_map content_visible_pc">
+                    <div class="static_map_inner">
+                        <div class="preloader_image">Загрузка</div>
+                        <img class="static_map_img" src="./assets/img/bg_map.jpg" alt="">
+                        <div class="static_map_address">Пионерская улица, 1а</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="wrapper_reviews">
+            </div>
+        </div>
+    </section>
+-->
+
     <nav class="bottom_top">
-        <a href="#intro">
-            <img class="bottom_top_ico" src="./assets/img/ico_arrow.svg" alt="Ввер">
+        <a class="bottom_top_inner" href="#intro">
+            <img class="bottom_top_ico" src="./assets/img/ico_arrow_top.svg" alt="Вверх">
         </a>
     </nav>
 
     <script src="./assets/js/jquery-3.6.1.min.js"></script>
     <script src="./assets/js/addclass_active.js"></script>
     <script src="./assets/js/active_scroll.js"></script>
-    <script src="./assets/js/modal_img.js"></script>
+    <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/slider_option.js"></script>
+    <script src="./assets/js/contact_telegram_form.js"></script>
+    <script src="./assets/js/choice_file_style.js"></script>
+    <script src="./assets/js/phone_mask_jquery.js"></script>
+    <script src="./assets/js/phone_mask.js"></script>
     <script src="./assets/js/preloader.js"></script>
 
 </body>

@@ -3,8 +3,8 @@ $(document).ready(function () {
         arrows: false,
         slidesToShow: 1,
         fade: true,
-//        draggable: false,
-//        swipe: false,
+        draggable: false,
+        swipe: false,
         asNavFor: ".slider, .slider_description",
     })
 
@@ -26,7 +26,7 @@ $(document).ready(function () {
         easing: 'linear', // Тип анимации
         infinite: true, // Зацикливание
         initialSlide: 0, // Стартовый слайд
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         pauseOnFocus: true, //Пауза при клике мышки на слайд
         pauseOnHover: true, //Пауза при наведении мышки на слайд

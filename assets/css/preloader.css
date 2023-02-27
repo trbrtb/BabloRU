@@ -89,6 +89,9 @@
     width: 99%;
     height: 99%;
     overflow: hidden;
+    top: 50%;
+    left: 50%;
+   transform: translate3d(-50%, -50%, 0);
 }
 
 .preloader_image::after {
@@ -116,5 +119,15 @@
 
     100% {
         left: 150%
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
     }
 }
