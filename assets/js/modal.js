@@ -27,7 +27,6 @@ $(document).ready(function () { // Ждём загрузки страницы
             "</div>");
 
         $('body').addClass('active');
-
         $(".close_modal_map").click(function () {
             $(".modal_map").fadeOut(200);
             setTimeout(function () {

@@ -12,4 +12,12 @@ $(document).ready(function () {
         $('.contact_feedback, body').toggleClass('active');
     });
 
+    $('.open_reviews, .btn_show_reviews').click(function (event) {
+        $('.reviews, .reviews_random, .btn_add_reviews, .btn_show_reviews, .reviews_list').addClass('active');
+    });
+
+    $('.btn_add_reviews, .btn_close_reviews').click(function (event) {
+        $('.reviews_form, .btn_close_reviews, body').toggleClass('active');
+    });
+
 });
