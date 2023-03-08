@@ -13,7 +13,8 @@
         let form = $("#" + $(this).attr("id"))[0];
         let fd = new FormData(form);
         $.ajax({
-            url: "/themes/rct/assets/php/send-message-to-telegram.php",
+            // url: "/themes/rct/assets/php/send-message-to-telegram.php",
+            url: "/assets/php/send-message-to-telegram.php",
             type: "POST",
             data: fd,
             processData: false,
@@ -24,17 +25,14 @@
             success: function success(res) {
                 $(".form_preloader").removeClass("active");
                 $('#contact_form')[0].reset();
+                $('.contact_choice_file_text').html('Прикрепить файл');
+                $(".contact_choice_file_del").addClass("hide");
 
-                // Посмотреть на статус ответа, если ошибка
-                // console.log(res);
                 let respond = $.parseJSON(res);
 
                 if (respond === "SUCCESS") {
                     $(".form_hidden").addClass("active");
                     $(".contact_form_message_wrapper").addClass("active");
-                    $(".btn_del").addClass("hide");
-                    $(".contact_form_file_text_1").addClass("hide");
-                    $(".contact_form_file_text_2").removeClass("hide");
                     message.text(successSendText).css("color", "#000000");
                     setTimeout(() => {
                         $(".form_hidden").removeClass("active");
