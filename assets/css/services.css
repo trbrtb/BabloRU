@@ -1,9 +1,9 @@
 .services {
     background-color: #fff;
     background-image: url(../img/bg_services.jpg);
-    background-size: 99.9% 99.9%;
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
     width: 100%;
     height: 90em
 }

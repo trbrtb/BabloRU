@@ -139,9 +139,9 @@
 .about_text_bg {
     background-color: #fff;
     background-image: url(../img/balrep/about_bg.jpg);
-    background-size: 99.9% 99.9%;
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
     position: absolute;
     width: 65%;
     height: 70%;
