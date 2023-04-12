@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Host: https://www.rct-balakovo.ml
+Sitemap: https://www.rct-balakovo.ml/sitemap.xml
